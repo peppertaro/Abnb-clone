@@ -1,0 +1,202 @@
+/*----------General-----------*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: helvetica;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.bg-yellow {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 20px;
+  padding: 30px 0 15px;
+  font-weight: bold;
+}
+
+/*----------HomeSection-----------*/
+.Home-section {
+  position: relative;
+  background-image: url("./plzCons-img.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.bg-bk {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+}
+
+/*----------Header-----------*/
+header {
+  line-height: 6rem;
+  width: 100%;
+}
+
+.logo {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+}
+
+.logo img {
+  width: 2rem;
+}
+
+.header-right {
+  float: right;
+}
+.header-right a {
+  display: inline-block;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+/*----------------------------*/
+.search-box {
+  margin-top: 5rem;
+  width: 30%;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.form-title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0 1rem;
+  border-radius: 3px;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+.search-box p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.f-date-box {
+  width: 50%;
+  display: inline-block;
+}
+
+#guests {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0 1rem;
+  border-radius: 0.3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+#guests i {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  padding: 0 1rem;
+}
+
+#search {
+  float: right;
+  border: none;
+  background-color: rgb(220, 80, 80);
+  font-weight: bold;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*-----------OptionSection-------------*/
+.options {
+  display: flex;
+}
+
+.option {
+  width: 20rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  margin-right: 1rem;
+}
+.option-box {
+  display: flex;
+  cursor: pointer;
+}
+
+.option-img {
+  width: 50%;
+  height: 100%;
+}
+
+.option-text {
+  width: 50%;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+/*------------A-PlusSection-------------*/
+.A-plus-img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./laConcha.jpg");
+  background-size: 100%;
+  object-fit: cover;
+  max-width: 70%;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+/*-----------RecommendSection------------*/
+.recommends {
+  display: flex;
+  background: yellow;
+  padding-bottom: 3rem;
+}
+
+.recommend {
+  width: 10rem;
+  margin: 1rem;
+}
+
+.rcmd-link {
+  position: relative;
+  background-color: beige;
+  cursor: pointer;
+}
+.rcmd-img {
+  z-index: 1;
+  width: 10rem;
+  border-radius: 0.5rem;
+}
+.rcmd-info {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
