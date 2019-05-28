@@ -1,0 +1,213 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*----------General-----------*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+	font-family:helvetica;
+}
+
+a{
+	text-decoration: none;
+	font-family: inherit;
+}
+.container{
+	max-width:1170px;
+	margin-left:20%;
+}
+
+.clear{
+	clear:left;
+	clear:right;
+}
+
+.title{
+	font-size:20px;
+	padding:30px 0 15px;
+	font-weight:bold;
+}
+
+/*----------HomeSection-----------*/
+.Home-section{
+	position:relative;
+	background-image:url('./plzCons-img.jpg');
+	background-size:cover;
+	height:100vh;
+}
+.bg-bk{
+	background-color:rgba(0,0,0,0.4);
+	height:100vh;
+}
+	
+/*----------Header-----------*/
+header{
+	position:absolute;
+	line-height:60px;
+	width:100%;
+}
+
+.logo{
+	display:inline-block;
+	padding:15px 20px;
+}
+	
+.logo img{
+	width:5%;
+}
+
+.header-right{
+	float:right;
+}
+.header-right a{
+	display:inline-block;
+	padding:10px;
+	color:rgba(255,255,255);
+}
+
+/*----------------------------*/
+.search-box{
+	margin-top:50px;
+	width:30%;
+	background-color:#fff;
+	border-radius:5px;
+	padding:20px;
+}
+
+.form-title{
+	font-size:20px;
+	padding-bottom:10px;
+	font-weight:bold;
+}
+
+.search-box input{
+	width:100%;
+	padding:10px;
+	margin:5px 0 10px;
+	border-radius:3px;
+	border:1px solid rgba(0,0,0,0.3);
+}
+
+.search-box p{
+	font-size:8px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+.f-date-box{
+	width:50%;
+	display:inline-block;
+}
+
+#guests{
+	position:relative;
+	width:100%;
+	padding:10px;
+	margin:5px 0 10px;
+	border-radius:3px;
+	border:1px solid rgba(0,0,0,0.3);
+	color:rgba(0,0,0,0.6);
+	cursor:pointer;
+}
+
+#guests i{
+	position:absolute;
+	display:inline-block;
+	right:0;
+	padding:0 10px;
+}
+
+#search{
+	float:right;
+	border:none;
+	background-color:rgb(220,80,80);
+	font-weight:bold;
+	padding:15px 20px;
+	border-radius:5px;
+	color:#fff;
+	cursor:pointer;
+}
+
+/*-----------OptionSection-------------*/
+.option{
+	display:inline-block;
+	width:21%;
+	border:1px solid rgba(0,0,0,0.3);
+	margin:0 0 50px 10px;
+}
+.option-box{
+	display:inline-block;
+}
+
+.option-img{
+	width:50%;
+	display:inline-block;
+}
+
+.option-text {
+	width:50%;
+	display:inline-block;
+	vertical-align: middle;
+}
+
+/*------------A-PlusSection-------------*/
+.A-plus-img{
+	background-image:url('./laConcha.jpg');
+	background-size:100%;
+	object-fit : cover;
+	max-width:70%
+}
+
+/*-----------RecommendSection------------*/
+.recommend-box{
+	background-color:#ffff84;
+	z-index:1;
+	margin:10px;
+}
