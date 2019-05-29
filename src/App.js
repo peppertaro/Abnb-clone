@@ -1,12 +1,14 @@
 import React from "react";
+import Nav from "./Nav";
 import Option from "./Option";
 import Recommend from "./Recommend";
-import { optionList, recommendList } from "./ListData";
+import { navList, optionList, recommendList } from "./ListData";
 import "./App.scss";
+import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-library.add(faAngleDown);
+import { faAngleDown, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+library.add(faAngleDown, faAngleRight);
 
 class App extends React.Component {
   render() {
@@ -14,54 +16,70 @@ class App extends React.Component {
       <div className="root-section">
         <div className="Home-section">
           <div className="bg-bk">
-            <div className="header">
-              <div className="logo">
-                <img src="./img/A-logo.png" alt="" />
+            <div className="header justify-content-between row px-3 mb-5">
+              <div className="logo p-4">
+                <img className="logo-img" src="./img/A-logo.png" alt="" />
               </div>
-              <div className="header-right">
-                <a id="h-home" href="#home">
-                  Host a home
-                </a>
-                <a id="h-exp" href="#exp">
-                  Host an experience
-                </a>
-                <a id="help" href="#help">
-                  Help
-                </a>
-                <a id="h-signup" href="#signup">
-                  Sign up
-                </a>
-                <a id="h-login" href="#login">
-                  Login
-                </a>
+              <div className="header-right row pt-5 mr-2">
+                {navList.map(NavItem => {
+                  return <Nav NVlink={NavItem.link} NVname={NavItem.NVname} />;
+                })}
               </div>
             </div>
-            <div className="container">
-              <form className="search-box">
-                <h2 className="form-title">
-                  Book unique homes and experiences.
-                </h2>
-                <p className="f-place">WHERE</p>
-                <input id="home-place" placeholder="Anywhere" />
-                <div className="f-date-box">
-                  <p className="f-check-in">CHECKIN</p>
-                  <input id="home-checkin" placeholder="mm/dd/yyyy" />
-                </div>
-                <div className="f-date-box">
-                  <p className="f-check-out">CHECKOUT</p>
-                  <input id="home-checkout" placeholder="mm/dd/yyyy" />
-                </div>
-                <p className="f-guests">GUESTS</p>
-                <div id="guests">
-                  Guests
-                  <i>
-                    <FontAwesomeIcon icon="angle-down" />
-                  </i>
-                </div>
-                <button id="search" type="submit">
-                  Search
-                </button>
-              </form>
+            <div className="Search-element">
+              <div className="container">
+                <form className="search-box">
+                  <h2 className="form-title">
+                    Book unique places to stay and things to do.
+                  </h2>
+                  <p className="f-place f-expl">WHERE</p>
+                  <input
+                    id="home-place"
+                    placeholder="Anywhere"
+                    className="f-input"
+                  />
+                  <div className="f-date-box">
+                    <p className="f-check-in f-expl">CHECK-IN</p>
+                    <input
+                      id="home-checkin"
+                      placeholder="mm/dd/yyyy"
+                      className="f-input"
+                    />
+                  </div>
+                  <div className="f-date-box">
+                    <p className="f-check-out f-expl">CHECKOUT</p>
+                    <input
+                      id="home-checkout"
+                      placeholder="mm/dd/yyyy"
+                      className="f-input"
+                    />
+                  </div>
+                  <div className="f-guest-box">
+                    <p className="f-guests f-expl">GUESTS</p>
+                    <div className="f-input-box f-input d-flex justify-content-between px-3">
+                      <input
+                        id="guests"
+                        placeholder="Guests"
+                        disabled="disabled"
+                      />
+                      <FontAwesomeIcon
+                        icon="angle-down"
+                        className="guest-choice"
+                      />
+                    </div>
+                  </div>
+                  <div className="search-btn text-right">
+                    <Button
+                      variant="flat"
+                      id="search"
+                      className="bg-danger text-light px-4 py-3"
+                      type="submit"
+                    >
+                      Search
+                    </Button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -83,18 +101,23 @@ class App extends React.Component {
         </div>
         <div className="A-plus-section">
           <div className="container">
-            <div className="A-plus-img-box">
+            <div className="A-plus-box">
               <h2 className="title">Introducing Airbnb Plus</h2>
               <p className="A-plus-dsc">
                 A selection of homes verified for quality and design
               </p>
               <div className="A-plus-img-box">
-                <button id="A-plus-home">
-                  EXPLORE HOMES{" "}
-                  <i>
-                    <FontAwesomeIcon icon="angle-side" />
-                  </i>
-                </button>
+                <div className="A-plus-btn d-flex justify-content-between">
+                  <Button
+                    variant="flat"
+                    id="A-plus-home"
+                    className="bg-light px-4 py-3"
+                    type="submit"
+                  >
+                    EXPLORE HOMES
+                    <FontAwesomeIcon icon="angle-right" className="home-i" />
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

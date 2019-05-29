@@ -20,14 +20,9 @@ a {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
 .title {
-  font-size: 20px;
-  padding: 30px 0 15px;
+  font-size: 2rem;
+  padding-top: 3rem;
   font-weight: bold;
 }
 
@@ -45,53 +40,43 @@ a {
 
 /*----------Header-----------*/
 header {
-  line-height: 6rem;
-  width: 100%;
-}
-
-.logo {
-  display: inline-block;
-  padding: 1.5rem 2rem;
+  height: 6rem;
 }
 
 .logo img {
-  width: 2rem;
+  width: 3.5rem;
 }
 
-.header-right {
-  float: right;
-}
-.header-right a {
-  display: inline-block;
-  padding: 1rem;
-  color: rgb(255, 255, 255);
+.link-font {
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 /*----------------------------*/
 .search-box {
-  margin-top: 5rem;
-  width: 30%;
+  width: 42rem;
   background-color: #fff;
   border-radius: 0.5rem;
   padding: 2rem;
 }
 
 .form-title {
-  font-size: 2rem;
+  font-size: 3rem;
   padding-bottom: 1rem;
   font-weight: bold;
 }
 
-.search-box input {
+.f-input {
   width: 100%;
   padding: 1rem;
-  margin: 0.5rem 0 1rem;
-  border-radius: 3px;
+  margin: 0.3rem 0 1.2rem;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
 }
 
-.search-box p {
-  font-size: 0.8rem;
+.f-expl {
+  font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
 }
@@ -101,33 +86,20 @@ header {
   display: inline-block;
 }
 
-#guests {
-  position: relative;
-  width: 100%;
-  padding: 1rem;
-  margin: 0.5rem 0 1rem;
-  border-radius: 0.3rem;
-  border: 0.1rem solid rgba(0, 0, 0, 0.3);
-  color: rgba(0, 0, 0, 0.6);
+.f-input-box {
   cursor: pointer;
 }
 
-#guests i {
-  position: absolute;
-  display: inline-block;
-  right: 0;
-  padding: 0 1rem;
+#guests {
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 #search {
-  float: right;
-  border: none;
-  background-color: rgb(220, 80, 80);
+  font-size: 1.5rem;
   font-weight: bold;
-  padding: 1.5rem 2rem;
-  border-radius: 0.5rem;
-  color: #fff;
-  cursor: pointer;
 }
 
 /*-----------OptionSection-------------*/
@@ -136,23 +108,24 @@ header {
 }
 
 .option {
-  width: 20rem;
-  border: 0.1rem solid rgba(0, 0, 0, 0.3);
-  margin-right: 1rem;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+  margin-right: 2rem;
 }
 .option-box {
   display: flex;
   cursor: pointer;
+  height: 8rem;
 }
 
 .option-img {
-  width: 50%;
+  width: 10rem;
   height: 100%;
 }
 
 .option-text {
-  width: 50%;
-  padding: 1rem;
+  font-size: 1.5rem;
+  width: 20rem;
+  padding: 3.5rem 5rem 0.5rem 1.5rem;
   font-weight: bold;
 }
 
@@ -160,16 +133,17 @@ header {
 .A-plus-img-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url("./laConcha.jpg");
-  background-size: 100%;
-  object-fit: cover;
-  max-width: 70%;
-  padding: 2rem;
-  margin: 2rem 0;
+  background: url("./laConcha.jpg") 100%;
 }
 
+.A-plus-btn {
+  vertical-align: middle;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  height: 30rem;
+  width: 100%;
+}
 /*-----------RecommendSection------------*/
 .recommends {
   display: flex;
@@ -188,6 +162,7 @@ header {
   cursor: pointer;
 }
 .rcmd-img {
+  position: absolute;
   z-index: 1;
   width: 10rem;
   border-radius: 0.5rem;

@@ -1,3 +1,31 @@
+const navList = [
+  {
+    NVid: "h-home",
+    NVlink: "#home",
+    NVname: "Host a home"
+  },
+  {
+    NVid: "h-exp",
+    NVlink: "#exp",
+    NVname: "Host an experience"
+  },
+  {
+    NVid: "help",
+    NVlink: "#help",
+    NVname: "Help"
+  },
+  {
+    NVid: "h-signup",
+    NVlink: "#signup",
+    NVname: "Sign up"
+  },
+  {
+    NVid: "h-login",
+    NVlink: "#login",
+    NVname: "Log in"
+  }
+];
+
 const optionList = [
   {
     OPlink: "#Homes",
@@ -38,4 +66,4 @@ const recommendList = [
   }
 ];
 
-export { optionList, recommendList };
+export { navList, optionList, recommendList };
