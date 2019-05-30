@@ -63,6 +63,31 @@ const recommendList = [
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
     RDprc: "18,828JPY/night average"
+  },
+  {
+    RDimg: "./img/rcmd/oahu.jpg",
+    RDtitle: "Oahu",
+    RDprc: "18,828JPY/night average"
+  },
+  {
+    RDimg: "./img/rcmd/oahu.jpg",
+    RDtitle: "Oahu",
+    RDprc: "18,828JPY/night average"
+  },
+  {
+    RDimg: "./img/rcmd/oahu.jpg",
+    RDtitle: "Oahu",
+    RDprc: "18,828JPY/night average"
+  },
+  {
+    RDimg: "./img/rcmd/oahu.jpg",
+    RDtitle: "Oahu",
+    RDprc: "18,828JPY/night average"
+  },
+  {
+    RDimg: "./img/rcmd/oahu.jpg",
+    RDtitle: "Oahu",
+    RDprc: "18,828JPY/night average"
   }
 ];
 
