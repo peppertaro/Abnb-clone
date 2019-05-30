@@ -72,7 +72,7 @@ class App extends React.Component {
                     <Button
                       variant="flat"
                       id="search"
-                      className="bg-danger text-light px-4 py-3"
+                      className="btn-danger text-light px-4 py-3"
                       type="submit"
                     >
                       Search
@@ -107,16 +107,18 @@ class App extends React.Component {
                 A selection of homes verified for quality and design
               </p>
               <div className="A-plus-img-box">
-                <div className="A-plus-btn d-flex justify-content-between">
-                  <Button
-                    variant="flat"
-                    id="A-plus-home"
-                    className="bg-light px-4 py-3"
-                    type="submit"
-                  >
-                    EXPLORE HOMES
-                    <FontAwesomeIcon icon="angle-right" className="home-i" />
-                  </Button>
+                <div className="A-plus-btn">
+                  <div className="d-flex justify-content-between">
+                    <Button
+                      variant="flat"
+                      id="A-plus-home"
+                      className="bg-light px-4 py-3"
+                      type="submit"
+                    >
+                      EXPLORE HOMES
+                      <FontAwesomeIcon icon="angle-right" className="home-i" />
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
