@@ -75,6 +75,17 @@ header {
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
 }
 
+#home-checkin {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#home-checkout {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+
 .f-expl {
   font-size: 1.2rem;
   font-weight: bold;

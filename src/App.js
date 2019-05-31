@@ -4,7 +4,7 @@ import Option from "./Option";
 import Recommend from "./Recommend";
 import { navList, optionList, recommendList } from "./ListData";
 import "./App.scss";
-import { Button } from "react-bootstrap";
+import { Button, Carousel } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faAngleDown, faAngleRight } from "@fortawesome/free-solid-svg-icons";
@@ -127,7 +127,7 @@ class App extends React.Component {
         <div className="recommend-section">
           <div className="container">
             <h2 className="title">Recommended for you</h2>
-            <div className="recommends">
+            <Carousel className="recommends">
               {recommendList.map(recommendItem => {
                 return (
                   <Recommend
@@ -138,7 +138,7 @@ class App extends React.Component {
                   />
                 );
               })}
-            </div>
+            </Carousel>
           </div>
         </div>
       </div>
