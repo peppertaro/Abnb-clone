@@ -2,7 +2,15 @@ import React from "react";
 import Nav from "./Nav";
 import Option from "./Option";
 import Recommend from "./Recommend";
-import { navList, optionList, recommendList } from "./ListData";
+import AHome from "./AHome";
+import Beach from "./Beach";
+import {
+  navList,
+  optionList,
+  recommendList,
+  HomeList,
+  BeachList
+} from "./ListData";
 import "./App.scss";
 import { Button, Carousel } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -135,6 +143,77 @@ class App extends React.Component {
                     RDimg={recommendItem.RDimg}
                     RDtitle={recommendItem.RDtitle}
                     RDprc={recommendItem.RDprc}
+                  />
+                );
+              })}
+            </Carousel>
+          </div>
+        </div>
+        <div className="experience-section">
+          <div className="container">
+            <a href="#experience" alt="">
+              <div className="exp-img-box">
+                <img className="exp-img" src="./img/Exp.jpg" alt="" />
+                <div className="exp-bg">
+                  <div className="exp-dsc">
+                    <div className="exp-tag">AIRBNB EXPERIENCES</div>
+                    <div className="exp-title font-weight-bold">
+                      Learn from the most interesting experts
+                    </div>
+                    <div className="exp-expl">
+                      One-of-a-kind activities hosted by locals, created for the
+                      curious.
+                    </div>
+                    <div className="exp-book font-weight-bold">
+                      Book experiences
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div className="A-Homes-section">
+          <div className="container">
+            <h2 className="title A-Homes-title">
+              Places to stay around the world
+              <FontAwesomeIcon icon="angle-right" className="A-home-i" />
+            </h2>
+            <div className="A-Homes">
+              {HomeList.map(AHomeItem => {
+                return (
+                  <AHome
+                    HMliink={AHomeItem.HMlink}
+                    HMimg={AHomeItem.HMimg}
+                    HMplace={AHomeItem.HMplace}
+                    HMtitle={AHomeItem.HMtitle}
+                    HMprice={AHomeItem.HMprice}
+                    HMstar={AHomeItem.HMstar}
+                    HMstarnum={AHomeItem.HMstarnum}
+                    HMSPhost={AHomeItem.HMSPhost}
+                  />
+                );
+              })}
+            </div>
+            <div className="A-Home-others">
+              <a href="#HomeOthers" alt="">
+                Show all(2000+)
+                <FontAwesomeIcon icon="angle-right" className="homeOther-i" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="Beach-section">
+          <div className="container">
+            <h2 className="title">Head to the beach</h2>
+            <Carousel className="Beaches">
+              {BeachList.map(beachItem => {
+                return (
+                  <Beach
+                    BHlink={beachItem.BHlink}
+                    BHimg={beachItem.BHimg}
+                    BHtitle={beachItem.BHtitle}
+                    BHprc={beachItem.BHprc}
                   />
                 );
               })}
