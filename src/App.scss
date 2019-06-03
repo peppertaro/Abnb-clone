@@ -26,6 +26,11 @@ a {
   font-weight: bold;
 }
 
+.showAll {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /*----------HomeSection-----------*/
 .Home-section {
   position: relative;
@@ -291,4 +296,104 @@ header {
 .homeOther-i {
   font-size: 1.2rem;
   margin-left: 0.7rem;
+}
+
+/*----Top-Rated-Section----*/
+.Top-Rated-experiences {
+  display: flex;
+}
+
+.Top-Rate-card {
+  margin: 1rem;
+  width: 15rem;
+}
+
+.Top-Rate-link {
+  cursor: pointer;
+}
+
+.Top-Rate-img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.Top-Rate-title {
+  font-size: 1.2rem;
+}
+
+.Top-Rate-others {
+  font-size: 1.2rem;
+}
+
+.Top-Rated-i {
+  font-size: 1.2rem;
+  margin: auto;
+  margin-left: 2rem;
+  display: none;
+}
+
+.TR-show-i {
+  margin: auto;
+  margin-left: 2rem;
+}
+/*------Footer------*/
+.footer-modal-box {
+  position: fixed;
+  z-index: 90;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-btn {
+  font-size: 1.4rem;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  right: 0;
+  margin: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+.footer-i {
+  margin-right: 1.5rem;
+}
+
+.footer-container {
+  padding: 3rem;
+}
+
+.footer-box {
+  padding: 1rem;
+  width: 25rem;
+}
+
+.FT-modal-title {
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+.FT-Modal-link {
+  color: #767676;
+  font-size: 1.4rem;
+  padding: 0.4rem 0;
+}
+
+.sns-i {
+  color: #767676;
+  font-size: 1.8rem;
+  margin-right: 1.5rem;
+}
+
+.sns-box {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.FT-badge {
+  margin: 1rem;
+  font-size: 1.2rem;
 }

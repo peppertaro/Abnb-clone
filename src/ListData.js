@@ -182,4 +182,210 @@ const BeachList = [
   }
 ];
 
-export { navList, optionList, recommendList, HomeList, BeachList };
+const TopRateList = [
+  {
+    TRlink: "#TopRateLink",
+    TRimg: "./img/TR-exp/BIL.jpg",
+    TRplace: "WORKSHOP · CHIANG MAI",
+    TRtitle: "Thai Traditional Yantra Tattoo.",
+    TRprice: "82",
+    TRstar: "4.99",
+    TRstarnum: "159",
+    TRoption: ""
+  },
+  {
+    TRlink: "#TopRateLink",
+    TRimg: "./img/TR-exp/BOL.jpg",
+    TRplace: "DAY TRIP · RIO DE JANEIRO",
+    TRtitle: "Sunrise + Secret pool + wild beaches!",
+    TRprice: "66",
+    TRstar: "4.99",
+    TRstarnum: "163",
+    TRoption: "Also offered in French,Italian and 2 more"
+  },
+  {
+    TRlink: "#TopRateLink",
+    TRimg: "./img/TR-exp/BRA.jpg",
+    TRplace: "PHOTO SHOOT · TOKYO",
+    TRtitle: "Your Personal Tokyo Photographer!",
+    TRprice: "91",
+    TRstar: "4.95",
+    TRstarnum: "437",
+    TRoption: ""
+  },
+  {
+    TRlink: "#TopRateLink",
+    TRimg: "./img/TR-exp/CHL.jpg",
+    TRplace: "DANCE PARTY · WATTHANA",
+    TRtitle: "The night to remember in Bangkok",
+    TRprice: "44",
+    TRstar: "4.93",
+    TRstarnum: "206",
+    TRoption: ""
+  },
+  {
+    TRlink: "#TopRateLink",
+    TRimg: "./img/TR-exp/DUB.jpg",
+    TRplace: "GUIDED HIKE · HAYMARKET",
+    TRtitle: "Figure 8 Pools Coastal Adventure Hike",
+    TRprice: "106",
+    TRstar: "4.93",
+    TRstarnum: "145",
+    TRoption: ""
+  },
+  {
+    TRlink: "#TopRateLink",
+    TRimg: "./img/TR-exp/Nica.jpg",
+    TRplace: "DAY TRIP · LISBON",
+    TRtitle: "This is SINTRA - a Day to Remember !",
+    TRprice: "72",
+    TRstar: "4.93",
+    TRstarnum: "783",
+    TRoption: ""
+  },
+  {
+    TRlink: "#TopRateLink",
+    TRimg: "./img/TR-exp/PER.jpg",
+    TRplace: "SPA VISIT · DESERT HOT SPRINGS",
+    TRtitle: "Hot Spring Sunset for Two",
+    TRprice: "75",
+    TRstar: "4.96",
+    TRstarnum: "347",
+    TRoption: ""
+  }
+];
+
+const FooterABList = [
+  {
+    FTid: "FTAB-careers",
+    FTlink: "#careers",
+    FTname: "Careers",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTAB-press",
+    FTlink: "#press",
+    FTname: "Press",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTAB-policies",
+    FTlink: "#policies",
+    FTname: "Policies",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTAB-help",
+    FTlink: "#help",
+    FTname: "Help",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTAB-Diversity",
+    FTlink: "#diversity",
+    FTname: "Diversity & Belonging",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTAB-Accesibility",
+    FTlink: "#accesibility",
+    FTname: "Accesibility",
+    FTbadge: "New"
+  }
+];
+
+const FooterDCVList = [
+  {
+    FTid: "FTDCV-T&S",
+    FTlink: "#T&S",
+    FTname: "Trust & Safety",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTDCV-TVC",
+    FTlink: "#Travel Credit",
+    FTname: "Travel Credit",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTDCV-GiftCards",
+    FTlink: "#GiftCards",
+    FTname: "Gift Cards",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTDCV-AirbnbCitizen",
+    FTlink: "#AirbnbCitizen",
+    FTname: "Airbnb Citizen",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTDCV-BzTravel",
+    FTlink: "#BusinessTravel",
+    FTname: "Business Travel",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTDCV-Guidebooks",
+    FTlink: "#Guidebooks",
+    FTname: "Guidebooks",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTDCV-Airbnbmag",
+    FTlink: "#Airbnbmag",
+    FTname: "Airbnbmag",
+    FTbadge: ""
+  }
+];
+
+const FooterHTList = [
+  {
+    FTid: "FTHT-WhyHost",
+    FTlink: "#WhyHost",
+    FTname: "Why Host",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTHT-Hospitality",
+    FTlink: "#Hospitality",
+    FTname: "Hospitality",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTHT-RspHT",
+    FTlink: "#ResponsibleHosting",
+    FTname: "Responsible Hosting",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTHT-ComCenter",
+    FTlink: "#ComCenter",
+    FTname: "Community Center",
+    FTbadge: ""
+  },
+  {
+    FTid: "FTHT-HostExp",
+    FTlink: "#HostExp",
+    FTname: "Host an Experience",
+    FTbadge: "New"
+  },
+  {
+    FTid: "FTHT-OpenHomes",
+    FTlink: "#OpenHomes",
+    FTname: "Open Homes",
+    FTbadge: ""
+  }
+];
+
+export {
+  navList,
+  optionList,
+  recommendList,
+  HomeList,
+  BeachList,
+  TopRateList,
+  FooterABList,
+  FooterDCVList,
+  FooterHTList
+};
