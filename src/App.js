@@ -24,9 +24,10 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faAngleDown,
   faAngleRight,
-  faGlobeEurope
+  faGlobeEurope,
+  faTimes
 } from "@fortawesome/free-solid-svg-icons";
-library.add(faAngleDown, faAngleRight, faGlobeEurope);
+library.add(faAngleDown, faAngleRight, faGlobeEurope, faTimes);
 
 class App extends React.Component {
   constructor(props) {
@@ -34,10 +35,25 @@ class App extends React.Component {
     this.state = {
       today: new Date(),
       startDate: "",
-      endDate: ""
+      endDate: "",
+      icon: "globe-europe",
+      dsc: "Terms, Privacy, Currency & More"
     };
     this.handleChangeStart = this.handleChangeStart.bind(this);
     this.handleChangeEnd = this.handleChangeEnd.bind(this);
+  }
+  openFTmodal() {
+    this.setState({
+      icon: "times",
+      dsc: "Close"
+    });
+  }
+
+  closeFTmodal() {
+    this.setState({
+      icon: "globe-europe",
+      dsc: "Terms, Privacy, Currency & More"
+    });
   }
 
   handleChangeStart(date) {
@@ -299,10 +315,16 @@ class App extends React.Component {
         </div>
         <div
           className="footer-btn bg-light"
-          onClick={FooterModal.handleClickOpen}
+          onClick={() => {
+            if (this.state.icon === "globe-europe") {
+              this.openFTmodal();
+            } else {
+              this.closeFTmodal();
+            }
+          }}
         >
-          <FontAwesomeIcon icon="globe-europe" className="footer-i" />
-          Terms, Privacy, Currency & More
+          <FontAwesomeIcon icon={this.state.icon} className="footer-i" />
+          {this.state.dsc}
         </div>
         <FooterModal />
       </div>
