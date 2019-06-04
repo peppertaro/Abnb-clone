@@ -1,5 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import Option from "./Option";
 import Recommend from "./Recommend";
 import AHome from "./AHome";
@@ -27,6 +29,28 @@ import {
 library.add(faAngleDown, faAngleRight, faGlobeEurope);
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      today: new Date(),
+      startDate: "",
+      endDate: ""
+    };
+    this.handleChangeStart = this.handleChangeStart.bind(this);
+    this.handleChangeEnd = this.handleChangeEnd.bind(this);
+  }
+
+  handleChangeStart(date) {
+    this.setState({
+      startDate: date
+    });
+  }
+  handleChangeEnd(date) {
+    this.setState({
+      endDate: date
+    });
+  }
+
   render() {
     return (
       <div className="root-section bg-light">
@@ -56,17 +80,29 @@ class App extends React.Component {
                   />
                   <div className="f-date-box">
                     <p className="f-check-in f-expl">CHECK-IN</p>
-                    <input
+                    <DatePicker
+                      selected={this.state.startDate}
+                      selectsStart
+                      startDate={this.state.startDate}
+                      endDate={this.state.endDate}
+                      onChange={this.handleChangeStart}
+                      minDate={this.state.today}
                       id="home-checkin"
-                      placeholder="mm/dd/yyyy"
+                      placeholderText="mm/dd/yyyy"
                       className="f-input"
                     />
                   </div>
                   <div className="f-date-box">
                     <p className="f-check-out f-expl">CHECKOUT</p>
-                    <input
+                    <DatePicker
+                      selected={this.state.endDate}
+                      selectsEnd
+                      startDate={this.state.startDate}
+                      endDate={this.state.endDate}
+                      onChange={this.handleChangeEnd}
+                      minDate={this.state.startDate}
                       id="home-checkout"
-                      placeholder="mm/dd/yyyy"
+                      placeholderText="mm/dd/yyyy"
                       className="f-input"
                     />
                   </div>

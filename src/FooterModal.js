@@ -10,6 +10,9 @@ import {
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 library.add(faFacebookF, faTwitter, faInstagram);
+const appElement = document.getElementsByClassName("footer-modal-box");
+ReactModal.setAppElement(appElement);
+
 class FooterModal extends React.Component {
   constructor() {
     super();
@@ -30,14 +33,13 @@ class FooterModal extends React.Component {
   }
   render() {
     return (
-      <div className="footer-modal-box bg-light">
-        <ReactModal
-          isOpen={this.state.FooterBoxOpen}
-          contentLabel="Minimal Modal Example"
-          className="Modal"
-          overlayClassName="Overlay"
-          onRequestClose={this.handleClickClose}
-        >
+      <ReactModal
+        isOpen={this.state.FooterBoxOpen}
+        className="footer-modal"
+        overlayClassName="Overlay"
+        onRequestClose={this.handleClickClose}
+      >
+        <div className="footer-modal-box bg-light">
           <div className="container">
             <div className="footer-container">
               <div className="footer-boxes d-flex">
@@ -174,8 +176,8 @@ class FooterModal extends React.Component {
               </div>
             </div>
           </div>
-        </ReactModal>
-      </div>
+        </div>
+      </ReactModal>
     );
   }
 }
