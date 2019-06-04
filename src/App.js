@@ -42,7 +42,157 @@ library.add(
 );
 
 class App extends React.Component {
+  handleClickOpen() {
+    this.setState({ FooterBoxOpen: true });
+  }
+
+  handleClickClose() {
+    this.setState({ FooterBoxOpen: false });
+  }
   render() {
+    let FooterBox;
+    if (this.state.FooterBoxOpen) {
+      FooterBox = (
+        <div className="footer-modal-box bg-light">
+          <div className="container">
+            <div className="footer-container">
+              <div className="footer-boxes d-flex">
+                <div className="footer-box">
+                  <h4 className="FT-modal-title">Airbnb</h4>
+                  {FooterABList.map(FTmodalItem => {
+                    return (
+                      <FooterModal
+                        FTid={FTmodalItem.FTid}
+                        FTlink={FTmodalItem.FTlink}
+                        FTname={FTmodalItem.FTname}
+                        FTbadge={FTmodalItem.FTbadge}
+                      />
+                    );
+                  })}
+                </div>
+                <div className="footer-box">
+                  <h4 className="FT-modal-title">Discover</h4>
+                  {FooterDCVList.map(FTmodalItem => {
+                    return (
+                      <FooterModal
+                        FTid={FTmodalItem.FTid}
+                        FTlink={FTmodalItem.FTlink}
+                        FTname={FTmodalItem.FTname}
+                        FTbadge={FTmodalItem.FTbadge}
+                      />
+                    );
+                  })}
+                </div>
+                <div className="footer-box">
+                  <h4 className="FT-modal-title">Hosting</h4>
+                  {FooterHTList.map(FTmodalItem => {
+                    return (
+                      <FooterModal
+                        FTid={FTmodalItem.FTid}
+                        FTlink={FTmodalItem.FTlink}
+                        FTname={FTmodalItem.FTname}
+                        FTbadge={FTmodalItem.FTbadge}
+                      />
+                    );
+                  })}
+                </div>
+                <div className="footer-box">
+                  <div className="sns-box">
+                    <a
+                      href="https://www.facebook.com/kechup.texon.alita"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      alt=""
+                    >
+                      <FontAwesomeIcon
+                        icon={["fab", "facebook-f"]}
+                        className="sns-i"
+                      />
+                    </a>
+                    <a
+                      href="https://twitter.com/urt201989"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      alt=""
+                    >
+                      <FontAwesomeIcon
+                        icon={["fab", "twitter"]}
+                        className="sns-i"
+                      />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/texonalita/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      alt=""
+                    >
+                      <FontAwesomeIcon
+                        icon={["fab", "instagram"]}
+                        className="sns-i"
+                      />
+                    </a>
+                  </div>
+                  <div className="FT-Modal">
+                    <a
+                      className="FT-Modal-link "
+                      id="Terms"
+                      href="#Terms"
+                      alt=""
+                    >
+                      Terms
+                    </a>
+                  </div>
+                  <div className="FT-Modal">
+                    <a
+                      className="FT-Modal-link "
+                      id="Privacy"
+                      href="#Privacy"
+                      alt=""
+                    >
+                      Privacy
+                    </a>
+                  </div>
+                  <div className="FT-Modal">
+                    <a
+                      className="FT-Modal-link "
+                      id="SiteMap"
+                      href="#SiteMap"
+                      alt=""
+                    >
+                      Site Map
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="FT-copyright border-top pt-4 d-flex">
+                <img className="FT-logo" src="/img/A-logo.png" alt="" />
+                <p className="cr-text p-3">
+                  © 2019 TAbnb, Inc. All rights reserved.
+                </p>
+                <div className="FT-buttons d-flex justify-content-end">
+                  <button
+                    variant="flat"
+                    id="lang"
+                    className=" FT-button bg-light"
+                    type="submit"
+                  >
+                    English
+                  </button>
+                  <button
+                    variant="flat"
+                    id="currency"
+                    className="FT-button bg-light"
+                    type="submit"
+                  >
+                    JPY - ¥
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
     return (
       <div className="root-section bg-light">
         <div className="Home-section">
@@ -280,120 +430,7 @@ class App extends React.Component {
           <FontAwesomeIcon icon="globe-europe" className="footer-i" />
           Terms, Privacy, Currency & More
         </div>
-        <div className="footer-modal-box bg-light">
-          <div className="container">
-            <div className="footer-container">
-              <div className="footer-boxes d-flex">
-                <div className="footer-box">
-                  <h4 className="FT-modal-title">Airbnb</h4>
-                  {FooterABList.map(FTmodalItem => {
-                    return (
-                      <FooterModal
-                        FTid={FTmodalItem.FTid}
-                        FTlink={FTmodalItem.FTlink}
-                        FTname={FTmodalItem.FTname}
-                        FTbadge={FTmodalItem.FTbadge}
-                      />
-                    );
-                  })}
-                </div>
-                <div className="footer-box">
-                  <h4 className="FT-modal-title">Discover</h4>
-                  {FooterDCVList.map(FTmodalItem => {
-                    return (
-                      <FooterModal
-                        FTid={FTmodalItem.FTid}
-                        FTlink={FTmodalItem.FTlink}
-                        FTname={FTmodalItem.FTname}
-                        FTbadge={FTmodalItem.FTbadge}
-                      />
-                    );
-                  })}
-                </div>
-                <div className="footer-box">
-                  <h4 className="FT-modal-title">Hosting</h4>
-                  {FooterHTList.map(FTmodalItem => {
-                    return (
-                      <FooterModal
-                        FTid={FTmodalItem.FTid}
-                        FTlink={FTmodalItem.FTlink}
-                        FTname={FTmodalItem.FTname}
-                        FTbadge={FTmodalItem.FTbadge}
-                      />
-                    );
-                  })}
-                </div>
-                <div className="footer-box">
-                  <div className="sns-box">
-                    <a
-                      href="https://www.facebook.com/kechup.texon.alita"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      alt=""
-                    >
-                      <FontAwesomeIcon
-                        icon={["fab", "facebook-f"]}
-                        className="sns-i"
-                      />
-                    </a>
-                    <a
-                      href="https://twitter.com/urt201989"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      alt=""
-                    >
-                      <FontAwesomeIcon
-                        icon={["fab", "twitter"]}
-                        className="sns-i"
-                      />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/texonalita/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      alt=""
-                    >
-                      <FontAwesomeIcon
-                        icon={["fab", "instagram"]}
-                        className="sns-i"
-                      />
-                    </a>
-                  </div>
-                  <div className="FT-Modal">
-                    <a
-                      className="FT-Modal-link "
-                      id="Terms"
-                      href="#Terms"
-                      alt=""
-                    >
-                      Terms
-                    </a>
-                  </div>
-                  <div className="FT-Modal">
-                    <a
-                      className="FT-Modal-link "
-                      id="Privacy"
-                      href="#Privacy"
-                      alt=""
-                    >
-                      Privacy
-                    </a>
-                  </div>
-                  <div className="FT-Modal">
-                    <a
-                      className="FT-Modal-link "
-                      id="SiteMap"
-                      href="#SiteMap"
-                      alt=""
-                    >
-                      Site Map
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {FooterBox}
       </div>
     );
   }

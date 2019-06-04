@@ -48,7 +48,7 @@ header {
   height: 6rem;
 }
 
-.logo img {
+.logo-img {
   width: 3.5rem;
 }
 
@@ -394,6 +394,30 @@ header {
 }
 
 .FT-badge {
-  margin: 1rem;
+  margin: 0 1rem;
   font-size: 1.2rem;
+}
+
+.FT-copyright {
+  position: relative;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.FT-logo {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+}
+
+.FT-buttons {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+}
+
+.FT-button {
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.16);
+  border: none;
+  margin: 0.6rem;
 }
