@@ -35,25 +35,10 @@ class App extends React.Component {
     this.state = {
       today: new Date(),
       startDate: "",
-      endDate: "",
-      icon: "globe-europe",
-      dsc: "Terms, Privacy, Currency & More"
+      endDate: ""
     };
     this.handleChangeStart = this.handleChangeStart.bind(this);
     this.handleChangeEnd = this.handleChangeEnd.bind(this);
-  }
-  openFTmodal() {
-    this.setState({
-      icon: "times",
-      dsc: "Close"
-    });
-  }
-
-  closeFTmodal() {
-    this.setState({
-      icon: "globe-europe",
-      dsc: "Terms, Privacy, Currency & More"
-    });
   }
 
   handleChangeStart(date) {
@@ -61,6 +46,7 @@ class App extends React.Component {
       startDate: date
     });
   }
+
   handleChangeEnd(date) {
     this.setState({
       endDate: date
@@ -153,7 +139,7 @@ class App extends React.Component {
         </div>
         <div className="Options-section">
           <div className="container">
-            <h2 className="title">Explore Airbnb</h2>
+            <h2 className="title">Explore TAbnb</h2>
             <div className="options">
               {optionList.map(optionItem => {
                 return (
@@ -170,7 +156,7 @@ class App extends React.Component {
         <div className="A-plus-section">
           <div className="container">
             <div className="A-plus-box">
-              <h2 className="title">Introducing Airbnb Plus</h2>
+              <h2 className="title">Introducing TAbnb Plus</h2>
               <p className="A-plus-dsc">
                 A selection of homes verified for quality and design
               </p>
@@ -216,7 +202,7 @@ class App extends React.Component {
                 <img className="exp-img" src="./img/Exp.jpg" alt="" />
                 <div className="exp-bg">
                   <div className="exp-dsc">
-                    <div className="exp-tag">AIRBNB EXPERIENCES</div>
+                    <div className="exp-tag">TAbnb EXPERIENCES</div>
                     <div className="exp-title font-weight-bold">
                       Learn from the most interesting experts
                     </div>
@@ -312,19 +298,6 @@ class App extends React.Component {
               <FontAwesomeIcon icon="angle-right" className="TR-show-i" />
             </a>
           </div>
-        </div>
-        <div
-          className="footer-btn bg-light"
-          onClick={() => {
-            if (this.state.icon === "globe-europe") {
-              this.openFTmodal();
-            } else {
-              this.closeFTmodal();
-            }
-          }}
-        >
-          <FontAwesomeIcon icon={this.state.icon} className="footer-i" />
-          {this.state.dsc}
         </div>
         <FooterModal />
       </div>
