@@ -1,7 +1,7 @@
 import React from "react";
 import ReactModal from "react-modal";
 import FooterLink from "./FooterLink";
-import { FooterABList, FooterDCVList, FooterHTList } from "./ListData";
+import { FooterABList, FooterDCVList, FooterHTList } from "../ListData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -16,7 +16,9 @@ ReactModal.setAppElement(appElement);
 const custom = {
   overlay: {
     zIndex: "100",
-    backgroundColor: "none"
+    backgroundColor: "none",
+    animationName: "SlideUp",
+    animationDuration: ".5s"
   }
 };
 
@@ -53,7 +55,8 @@ class FooterModal extends React.Component {
     return (
       <div className="Footer">
         <div
-          className="footer-btn bg-light"
+          id="footer-btn"
+          className="bg-light"
           onClick={() => {
             if (this.state.icon === "globe-europe") {
               this.openButton();

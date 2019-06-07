@@ -31,6 +31,17 @@ a {
   font-weight: bold;
 }
 
+@keyframes SlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /*----------HomeSection-----------*/
 .Home-section {
   position: relative;
@@ -344,7 +355,7 @@ header {
   bottom: 0;
 }
 
-.footer-btn {
+#footer-btn {
   font-size: 1.4rem;
   position: fixed;
   z-index: 110;

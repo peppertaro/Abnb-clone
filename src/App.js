@@ -1,13 +1,13 @@
 import React from "react";
-import Nav from "./Nav";
+import Nav from "./Components/Nav";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import Option from "./Option";
-import Recommend from "./Recommend";
-import AHome from "./AHome";
-import Beach from "./Beach";
-import TopRate from "./TopRate";
-import FooterModal from "./FooterModal";
+import Option from "./Components/Option";
+import Recommend from "./Components/Recommend";
+import AHome from "./Components/AHome";
+import Beach from "./Components/Beach";
+import TopRate from "./Components/TopRate";
+import FooterModal from "./Components/FooterModal";
 import {
   navList,
   optionList,
