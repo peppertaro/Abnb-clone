@@ -1,6 +1,6 @@
 import React from "react";
 import ReactModal from "react-modal";
-import FooterLink from "./FooterLink";
+import FooterLink from "../Components/FooterLink";
 import { FooterABList, FooterDCVList, FooterHTList } from "../ListData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -26,7 +26,7 @@ class FooterModal extends React.Component {
   constructor() {
     super();
     this.state = {
-      ModalToggle: false,
+      FooterModalToggle: false,
       icon: "globe-europe",
       dsc: "Terms, Privacy, Currency & More"
     };
@@ -48,7 +48,7 @@ class FooterModal extends React.Component {
   }
 
   handleClick() {
-    this.setState({ ModalToggle: !this.state.ModalToggle });
+    this.setState({ FooterModalToggle: !this.state.FooterModalToggle });
   }
 
   render() {
@@ -71,7 +71,7 @@ class FooterModal extends React.Component {
           {this.state.dsc}
         </div>
         <ReactModal
-          isOpen={this.state.ModalToggle}
+          isOpen={this.state.FooterModalToggle}
           className="footer-modal"
           style={custom}
         >

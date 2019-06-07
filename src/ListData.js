@@ -26,6 +26,30 @@ const navList = [
   }
 ];
 
+const GMTypeList = [
+  {
+    GMtype: "Adults",
+    GMdsc: "",
+    GMnumID:"GMnumAdults",
+    GMidMinus: "GMAdultsMinus",
+    GMidPlus: "GMAdultsPlus"
+  },
+  {
+    GMtype: "Children",
+    GMdsc: "Ages 2-12",
+    GMnumID:"GMnumChildren",
+    GMidMinus: "GMChildrenMinus",
+    GMidPlus: "GMChildrenPlus"
+  },
+  {
+    GMtype: "Infants",
+    GMdsc: "Under 2",
+    GMnumID:"GMnumInfants",
+    GMidMinus: "GMInfantsMinus",
+    GMidPlus: "GMInfantsPlus"
+  }
+];
+
 const optionList = [
   {
     OPlink: "#Homes",
@@ -380,6 +404,7 @@ const FooterHTList = [
 
 export {
   navList,
+  GMTypeList,
   optionList,
   recommendList,
   HomeList,

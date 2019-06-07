@@ -42,6 +42,17 @@ a {
   }
 }
 
+@keyframes SlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /*----------HomeSection-----------*/
 .Home-section {
   position: relative;
@@ -115,6 +126,40 @@ header {
 
 .f-input-box {
   cursor: pointer;
+}
+
+#GTModalRcv {
+  position: relative;
+}
+
+.Guest-modal {
+  position: absolute;
+  padding: 2rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.GMMinus,
+.GMPlus {
+  font-size: 3.5rem;
+  padding: 1rem;
+  border: 0.1rem solid blueviolet;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.GMnum {
+  padding: 1rem 2rem;
+}
+
+#GMApply {
+  padding: 1rem;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+    color: skyblue;
+  }
 }
 
 #guests {

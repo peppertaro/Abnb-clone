@@ -2,12 +2,13 @@ import React from "react";
 import Nav from "./Components/Nav";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import GuestModal from "./Modals/GuestModal";
 import Option from "./Components/Option";
 import Recommend from "./Components/Recommend";
 import AHome from "./Components/AHome";
 import Beach from "./Components/Beach";
 import TopRate from "./Components/TopRate";
-import FooterModal from "./Components/FooterModal";
+import FooterModal from "./Modals/FooterModal";
 import {
   navList,
   optionList,
@@ -19,7 +20,6 @@ import {
 import "./App.scss";
 import { Button, Carousel } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faAngleDown,
@@ -108,21 +108,8 @@ class App extends React.Component {
                       className="f-input"
                     />
                   </div>
-                  <div className="f-guest-box">
-                    <p className="f-guests f-expl">GUESTS</p>
-                    <div className="f-input-box f-input d-flex justify-content-between px-3">
-                      <input
-                        id="guests"
-                        placeholder="Guests"
-                        disabled="disabled"
-                      />
-                      <FontAwesomeIcon
-                        icon="angle-down"
-                        className="guest-choice"
-                      />
-                    </div>
-                  </div>
-                  <div className="search-btn text-right">
+                  <GuestModal />
+                  <div id="search-btn" className="text-right">
                     <Button
                       variant="flat"
                       id="search"
