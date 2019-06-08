@@ -7,9 +7,10 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faFacebookF,
   faTwitter,
-  faInstagram
+  faInstagram,
+  faAirbnb
 } from "@fortawesome/free-brands-svg-icons";
-library.add(faFacebookF, faTwitter, faInstagram);
+library.add(faFacebookF, faTwitter, faInstagram, faAirbnb);
 const appElement = document.getElementById("root");
 ReactModal.setAppElement(appElement);
 
@@ -187,7 +188,10 @@ class FooterModal extends React.Component {
                   </div>
                 </div>
                 <div className="FT-copyright border-top pt-4 d-flex">
-                  <img className="FT-logo" src="/img/A-logo.png" alt="" />
+                  <FontAwesomeIcon
+                    icon={["fab", "airbnb"]}
+                    className="FT-logo-i m-4"
+                  />
                   <p className="cr-text p-3">
                     © 2019 TAbnb, Inc. All rights reserved.
                   </p>

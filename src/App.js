@@ -19,6 +19,7 @@ import {
 import "./App.scss";
 import { Button, Carousel } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAirbnb } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faAngleDown,
@@ -26,7 +27,7 @@ import {
   faGlobeEurope,
   faTimes
 } from "@fortawesome/free-solid-svg-icons";
-library.add(faAngleDown, faAngleRight, faGlobeEurope, faTimes);
+library.add(faAngleDown, faAngleRight, faGlobeEurope, faTimes, faAirbnb);
 
 class App extends React.Component {
   constructor(props) {
@@ -58,8 +59,11 @@ class App extends React.Component {
         <div className="Home-section">
           <div className="bg-bk">
             <div className="header justify-content-between row px-3 mb-5">
-              <div className="logo p-4">
-                <img className="logo-img" src="./img/A-logo.png" alt="" />
+              <div className="logo">
+                <FontAwesomeIcon
+                  icon={["fab", "airbnb"]}
+                  className="logo-i m-4"
+                />
               </div>
               <div className="header-right row pt-5 mr-2">
                 {navList.map(NavItem => {
