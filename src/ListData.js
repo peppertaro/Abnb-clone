@@ -30,21 +30,21 @@ const GMTypeList = [
   {
     GMtype: "Adults",
     GMdsc: "",
-    GMnumID:"GMnumAdults",
+    GMnumID: "GMnumAdults",
     GMidMinus: "GMAdultsMinus",
     GMidPlus: "GMAdultsPlus"
   },
   {
     GMtype: "Children",
     GMdsc: "Ages 2-12",
-    GMnumID:"GMnumChildren",
+    GMnumID: "GMnumChildren",
     GMidMinus: "GMChildrenMinus",
     GMidPlus: "GMChildrenPlus"
   },
   {
     GMtype: "Infants",
     GMdsc: "Under 2",
-    GMnumID:"GMnumInfants",
+    GMnumID: "GMnumInfants",
     GMidMinus: "GMInfantsMinus",
     GMidPlus: "GMInfantsPlus"
   }
@@ -71,46 +71,55 @@ const recommendList = [
   {
     RDimg: "./img/rcmd/osaka.jpg",
     RDtitle: "Osaka",
+    RDlink: "#Osaka",
     RDprc: "6,160JPY/night average"
   },
   {
     RDimg: "./img/rcmd/okinawa.jpg",
     RDtitle: "Okinawa",
+    RDlink: "#Okinawa",
     RDprc: "8,846 JPY/night average"
   },
   {
     RDimg: "./img/rcmd/kyoto.jpg",
     RDtitle: "Kyoto",
+    RDlink: "#Kyoto",
     RDprc: "9,543JPY/night average"
   },
   {
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
+    RDlink: "#Oahu",
     RDprc: "18,828JPY/night average"
   },
   {
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
+    RDlink: "#Oahu",
     RDprc: "18,828JPY/night average"
   },
   {
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
+    RDlink: "#Oahu",
     RDprc: "18,828JPY/night average"
   },
   {
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
+    RDlink: "#Oahu",
     RDprc: "18,828JPY/night average"
   },
   {
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
+    RDlink: "#Oahu",
     RDprc: "18,828JPY/night average"
   },
   {
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
+    RDlink: "#Oahu",
     RDprc: "18,828JPY/night average"
   }
 ];

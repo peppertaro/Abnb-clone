@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 library.add(faMinus, faPlus);
+
 class GuestTypeBox extends React.Component {
   constructor() {
     super();
@@ -19,9 +20,7 @@ class GuestTypeBox extends React.Component {
   }
 
   NumPlus() {
-    this.state.GMTotal >= 16
-      ? this.setState({ onClick: null })
-      : this.setState({ GMnum: this.state.GMnum + 1 });
+    this.setState({ GMnum: this.state.GMnum + 1 });
   }
 
   render() {
