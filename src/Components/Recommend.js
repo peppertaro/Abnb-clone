@@ -9,11 +9,11 @@ class recommend extends React.Component {
       <Carousel className="Recommend-box">
         {recommendList.map((recommendItem, i) => (
           <Carousel.Item {...RecommendBox.props}>
-            <img className="rcmd-img" src={recommendItem.RDimg} alt="" />
-            <Carousel.Caption className="rcmd-info text-light">
-              <a href={recommendItem.RDlink} className="rcmd-link">
-                <h3 className="rcmd-title">{recommendItem.RDtitle}</h3>
-                <p className="rcmd-prc">{recommendItem.RDprc}</p>
+            <img className="Carousel-img" src={recommendItem.RDimg} alt="" />
+            <Carousel.Caption className="Carousel-info text-light">
+              <a href={recommendItem.RDlink} className="Carousel-link">
+                <h3 className="Carousel-title">{recommendItem.RDtitle}</h3>
+                <p className="Carousel-prc">{recommendItem.RDprc}</p>
               </a>
             </Carousel.Caption>
           </Carousel.Item>

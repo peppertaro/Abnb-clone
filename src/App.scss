@@ -223,7 +223,7 @@ header {
   font-size: 1.2rem;
   margin-left: 0.7rem;
 }
-/*-----------RecommendSection------------*/
+/*-----------CarouselCSSs------------*/
 .recommends {
   display: flex;
   padding-bottom: 3rem;
@@ -235,23 +235,23 @@ header {
   margin: 1rem;
 }
 
-.rcmd-img-box {
+.Carousel-img-box {
   position: relative;
   width: 20rem;
   height: 25rem;
 }
 
-.rcmd-link {
+.Carousel-link {
   cursor: pointer;
 }
-.rcmd-img {
+.Carousel-img {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
   opacity: 0.7;
 }
-.rcmd-info {
+.Carousel-info {
   position: absolute;
   z-index: 10;
   top: 80%;
@@ -260,7 +260,7 @@ header {
   -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
-.rcmd-title {
+.Carousel-title {
   font-size: 1.5rem;
 }
 

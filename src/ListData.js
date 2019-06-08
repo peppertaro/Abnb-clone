@@ -209,6 +209,31 @@ const HomeList = [
 
 const BeachList = [
   {
+    BHlink: "#link",
+    BHimg: "./img/bch/osaka.jpg",
+    BHtitle: "Osaka",
+    BHprc: "6,160JPY/night average"
+  },
+  {
+    BHlink: "#link",
+    BHimg: "./img/bch/kyoto.jpg",
+    BHtitle: "kyoto",
+    BHprc: "6,160JPY/night average"
+  },
+  {
+    BHlink: "#link",
+    BHimg: "./img/bch/oahu.jpg",
+    BHtitle: "oahu",
+    BHprc: "6,160JPY/night average"
+  },
+  {
+    BHlink: "#link",
+    BHimg: "./img/bch/okinawa.jpg",
+    BHtitle: "okinawa",
+    BHprc: "6,160JPY/night average"
+  },
+  {
+    BHlink: "#link",
     BHimg: "./img/bch/osaka.jpg",
     BHtitle: "Osaka",
     BHprc: "6,160JPY/night average"

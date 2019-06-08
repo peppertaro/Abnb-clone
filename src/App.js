@@ -12,12 +12,13 @@ import FooterModal from "./Modals/FooterModal";
 import {
   navList,
   optionList,
+  recommendList,
   HomeList,
   BeachList,
   TopRateList
 } from "./ListData";
 import "./App.scss";
-import { Button, Carousel } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAirbnb } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -172,7 +173,16 @@ class App extends React.Component {
           <div className="container">
             <h2 className="title">Recommended for you</h2>
             <div className="recommends">
-              <Recommend />
+              {recommendList.map(recommendItem => {
+                return (
+                  <Recommend
+                    BHlink={recommendItem.BHlink}
+                    BHimg={recommendItem.BHimg}
+                    BHtitle={recommendItem.BHtitle}
+                    BHprc={recommendItem.BHprc}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
@@ -233,7 +243,7 @@ class App extends React.Component {
         <div className="Beach-section">
           <div className="container">
             <h2 className="title">Head to the beach</h2>
-            <Carousel className="Beaches">
+            <div className="Beaches d-flex">
               {BeachList.map(beachItem => {
                 return (
                   <Beach
@@ -244,7 +254,7 @@ class App extends React.Component {
                   />
                 );
               })}
-            </Carousel>
+            </div>
           </div>
         </div>
         <div className="Top-Rated-experience-Section">
