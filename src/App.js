@@ -18,7 +18,7 @@ import {
   TopRateList
 } from "./ListData";
 import "./App.scss";
-import { Button } from "react-bootstrap";
+import { Button, Carousel } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAirbnb } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -68,7 +68,14 @@ class App extends React.Component {
               </div>
               <div className="header-right row pt-5 mr-2">
                 {navList.map(NavItem => {
-                  return <Nav NVlink={NavItem.link} NVname={NavItem.NVname} />;
+                  return (
+                    <Nav
+                      key={NavItem.NVkey}
+                      NVid={NavItem.NVid}
+                      NVlink={NavItem.NVlink}
+                      NVname={NavItem.NVname}
+                    />
+                  );
                 })}
               </div>
             </div>
@@ -135,6 +142,7 @@ class App extends React.Component {
               {optionList.map(optionItem => {
                 return (
                   <Option
+                    key={optionItem.OPkey}
                     OPlink={optionItem.OPlink}
                     OPimg={optionItem.OPimg}
                     OPname={optionItem.OPname}
@@ -173,16 +181,15 @@ class App extends React.Component {
           <div className="container">
             <h2 className="title">Recommended for you</h2>
             <div className="recommends">
-              {recommendList.map(recommendItem => {
-                return (
-                  <Recommend
-                    BHlink={recommendItem.BHlink}
-                    BHimg={recommendItem.BHimg}
-                    BHtitle={recommendItem.BHtitle}
-                    BHprc={recommendItem.BHprc}
-                  />
-                );
-              })}
+              {recommendList.map((recommendItem, i) => (
+                <Recommend
+                  key={recommendItem.RDkey}
+                  RDimg={recommendItem.RDimg}
+                  RDlink={recommendItem.RDlink}
+                  RDtitle={recommendItem.RDtitle}
+                  RDprc={recommendItem.RDprc}
+                />
+              ))}
             </div>
           </div>
         </div>
@@ -220,6 +227,7 @@ class App extends React.Component {
               {HomeList.map(AHomeItem => {
                 return (
                   <AHome
+                    key={AHomeItem.HMkey}
                     HMliink={AHomeItem.HMlink}
                     HMimg={AHomeItem.HMimg}
                     HMplace={AHomeItem.HMplace}
@@ -244,16 +252,19 @@ class App extends React.Component {
           <div className="container">
             <h2 className="title">Head to the beach</h2>
             <div className="Beaches d-flex">
-              {BeachList.map(beachItem => {
-                return (
-                  <Beach
-                    BHlink={beachItem.BHlink}
-                    BHimg={beachItem.BHimg}
-                    BHtitle={beachItem.BHtitle}
-                    BHprc={beachItem.BHprc}
-                  />
-                );
-              })}
+              <Carousel className="Beach m-2">
+                {BeachList.map(beachItem => {
+                  return (
+                    <Beach
+                      key={beachItem.BHkey}
+                      BHlink={beachItem.BHlink}
+                      BHimg={beachItem.BHimg}
+                      BHtitle={beachItem.BHtitle}
+                      BHprc={beachItem.BHprc}
+                    />
+                  );
+                })}
+              </Carousel>
             </div>
           </div>
         </div>
@@ -272,7 +283,8 @@ class App extends React.Component {
               {TopRateList.map(TopRateItem => {
                 return (
                   <TopRate
-                    TRliink={TopRateItem.TRlink}
+                    key={TopRateItem.TRkey}
+                    TRlink={TopRateItem.TRlink}
                     TRimg={TopRateItem.TRimg}
                     TRplace={TopRateItem.TRplace}
                     TRtitle={TopRateItem.TRtitle}

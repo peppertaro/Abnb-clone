@@ -61,6 +61,7 @@ class GuestModal extends React.Component {
           {GMTypeList.map(GMTypeItem => {
             return (
               <GuestTypeBox
+                key={GMTypeItem.GMkey}
                 GMtype={GMTypeItem.GMtype}
                 GMdsc={GMTypeItem.GMdsc}
                 GMidMinus={GMTypeItem.GMidMinus}

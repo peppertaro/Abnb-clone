@@ -85,7 +85,8 @@ class FooterModal extends React.Component {
                     {FooterABList.map(FTmodalItem => {
                       return (
                         <FooterLink
-                          FTid={FTmodalItem.FTid}
+                          key={FTmodalItem.FTkey}
+                          FTABid={FTmodalItem.FTABid}
                           FTlink={FTmodalItem.FTlink}
                           FTname={FTmodalItem.FTname}
                           FTbadge={FTmodalItem.FTbadge}
@@ -98,7 +99,8 @@ class FooterModal extends React.Component {
                     {FooterDCVList.map(FTmodalItem => {
                       return (
                         <FooterLink
-                          FTid={FTmodalItem.FTid}
+                          key={FTmodalItem.FTkey}
+                          FTDCVid={FTmodalItem.FTDCVid}
                           FTlink={FTmodalItem.FTlink}
                           FTname={FTmodalItem.FTname}
                           FTbadge={FTmodalItem.FTbadge}
@@ -111,7 +113,8 @@ class FooterModal extends React.Component {
                     {FooterHTList.map(FTmodalItem => {
                       return (
                         <FooterLink
-                          FTid={FTmodalItem.FTid}
+                          key={FTmodalItem.FTkey}
+                          FTHTid={FTmodalItem.FTHTid}
                           FTlink={FTmodalItem.FTlink}
                           FTname={FTmodalItem.FTname}
                           FTbadge={FTmodalItem.FTbadge}
