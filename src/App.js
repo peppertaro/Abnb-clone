@@ -56,7 +56,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="root-section bg-light">
-        <div className="Home-section">
+        <div id="home" className="Home-section">
           <div className="bg-bk">
             <div className="header justify-content-between row px-3 mb-5">
               <div className="logo">
@@ -184,7 +184,7 @@ class App extends React.Component {
             </div>
           </div>
         </div>
-        <div className="experience-section">
+        <div id="exp" className="experience-section">
           <div className="container">
             <a href="#experience" alt="">
               <div className="exp-img-box">
