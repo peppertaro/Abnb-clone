@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "af917b7080880e5ac5454057cfede66b",
+    "revision": "2a50114ecd14980ba19b9274aae7d75a",
     "url": "/Abnb-clone/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Abnb-clone/static/css/2.c7bb94bc.chunk.css"
   },
   {
-    "revision": "6b0efc481e42fcae809c",
+    "revision": "a80d439bd47ec7feec0b",
     "url": "/Abnb-clone/static/css/main.2cfbdd56.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Abnb-clone/static/js/2.afca2217.chunk.js"
   },
   {
-    "revision": "6b0efc481e42fcae809c",
-    "url": "/Abnb-clone/static/js/main.6ffba558.chunk.js"
+    "revision": "a80d439bd47ec7feec0b",
+    "url": "/Abnb-clone/static/js/main.2ed012ed.chunk.js"
   },
   {
     "revision": "96553508eb5206de1dca",

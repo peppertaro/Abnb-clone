@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Abnb-clone/precache-manifest.9122ac2449c2955cbf8190e19482d5bf.js"
+  "/Abnb-clone/precache-manifest.362afb670350ff29eec895e83d1966ce.js"
 );
 
 self.addEventListener('message', (event) => {
