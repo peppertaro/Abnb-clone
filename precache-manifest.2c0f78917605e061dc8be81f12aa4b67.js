@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e16554d41d03c9b591cc6c678dad324d",
+    "revision": "cecbbf327db54c77c797b8e3194316c3",
     "url": "/Abnb-clone/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Abnb-clone/static/css/2.c7bb94bc.chunk.css"
   },
   {
-    "revision": "e225a35cf10ed12d7dec",
-    "url": "/Abnb-clone/static/css/main.27cfb03a.chunk.css"
+    "revision": "63a1e4f2c93f9cdfc7eb",
+    "url": "/Abnb-clone/static/css/main.2cfbdd56.chunk.css"
   },
   {
     "revision": "129b02919da9b5146bcb",
     "url": "/Abnb-clone/static/js/2.afca2217.chunk.js"
   },
   {
-    "revision": "e225a35cf10ed12d7dec",
-    "url": "/Abnb-clone/static/js/main.2a56e87b.chunk.js"
+    "revision": "63a1e4f2c93f9cdfc7eb",
+    "url": "/Abnb-clone/static/js/main.87da699d.chunk.js"
   },
   {
     "revision": "96553508eb5206de1dca",
