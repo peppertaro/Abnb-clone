@@ -147,91 +147,91 @@ const recommendList = [
 const HomeList = [
   {
     HMkey: "601",
-    HMlink: "#HomeListLink",
+    HMlink: "#HomeListLink1",
     HMimg: "./img/Home/Aiako.jpg",
     HMplace: "CAMPER/RV · ALOZAINA",
     HMtitle: "Airstream 'Glamping' in Andalucia!",
     HMprice: "15,161",
-    HMstar: "star star5",
+    HMstar: " star5",
     HMstarnum: "84",
-    HMSPhost: "・・Superhost"
+    HMSPhost: " · Superhost"
   },
   {
     HMkey: "602",
-    HMlink: "#HomeListLink",
+    HMlink: "#HomeListLink2",
     HMimg: "./img/Home/BCN.jpg",
     HMplace: "ENTIRE APARTMENT · HONGKOU",
     HMtitle: "#2 SHANGHIGH HOME",
     HMprice: "4,548",
-    HMstar: "star star5",
+    HMstar: " star5",
     HMstarnum: "390",
-    HMSPhost: "・Superhost"
+    HMSPhost: " · Superhost"
   },
   {
     HMkey: "603",
-    HMlink: "#HomeListLink",
+    HMlink: "#HomeListLink3",
     HMimg: "./img/Home/Beldui.jpg",
     HMplace: "ISLAND · FERN FOREST",
     HMtitle: "Dreamy Tropical Tree House",
     HMprice: "32,489",
-    HMstar: "star star5",
+    HMstar: " star5",
     HMstarnum: "607",
-    HMSPhost: "・Superhost"
+    HMSPhost: " · Superhost"
   },
   {
     HMkey: "604",
-    HMlink: "#HomeListLink",
+    HMlink: "#HomeListLink4",
     HMimg: "./img/Home/Bruja.jpg",
     HMplace: "HUT · ARMENIA",
     HMtitle: "Romantic Cabana with view",
     HMprice: "4,332",
-    HMstar: "star star5",
+    HMstar: " star5",
     HMstarnum: "221",
-    HMSPhost: "・Superhost"
+    HMSPhost: " · Superhost"
   },
   {
     HMkey: "605",
-    HMlink: "#HomeListLink",
+    HMlink: "#HomeListLink5",
     HMimg: "./img/Home/Donosti.jpg",
     HMplace: "CYCLADIC HOUSE · OIA",
     HMtitle: "Unique Architecture Cave House",
     HMprice: "60,646",
-    HMstar: "star star5",
+    HMstar: " star5",
     HMstarnum: "179",
-    HMSPhost: "・Superhost"
+    HMSPhost: " · Superhost"
   },
   {
     HMkey: "606",
-    HMlink: "#HomeListLink",
+    HMlink: "#HomeListLink6",
     HMimg: "./img/Home/Fuji.jpg",
     HMplace: "ENTIRE HOUSE · FUJIEDA",
     HMtitle: "Japan Charm&Tradition-Yui Valley(easy Tokyo/Kyoto)",
     HMprice: "11,479",
-    HMstar: "star star5",
+    HMstar: " star5",
     HMstarnum: "309",
-    HMSPhost: "・Superhost"
+    HMSPhost: " · Superhost"
   },
   {
     HMkey: "607",
-    HMlink: "#HomeListLink",
+    HMlink: "#HomeListLink7",
     HMimg: "./img/Home/Gaztelugatze.jpg",
     HMplace: "ENTIRE APARTMENT · PALERMO",
     HMtitle: "Palazzo Cattolica Art-Apartment",
     HMprice: "10,938",
-    HMstar: "star star5",
+    HMstar: " star5",
     HMstarnum: "313",
-    HMSPhost: "・Superhost"
+    HMSPhost: " · Superhost"
   },
   {
     HMkey: "608",
-    HMlink: "#HomeListLink",
+    HMlink: "#HomeListLink8",
     HMimg: "./img/Home/Getaria.jpg",
     HMplace: "CASTLE · TWENTYNINE PALMS",
     HMtitle: "Tile House",
     HMprice: "19,385",
-    HMstar: "star star5",
+    HMstar: " star5",
     HMstarnum: "363",
-    HMSPhost: "・Superhost"
+    HMSPhost: " · Superhost"
   }
 ];
 
@@ -276,78 +276,78 @@ const BeachList = [
 const TopRateList = [
   {
     TRkey: "801",
-    TRlink: "#TopRateLink",
+    TRlink: "#TopRateLink1",
     TRimg: "./img/TR-exp/BIL.jpg",
     TRplace: "WORKSHOP · CHIANG MAI",
     TRtitle: "Thai Traditional Yantra Tattoo.",
     TRprice: "82",
-    TRstar: "star star4-5",
+    TRstar: "  star4-5",
     TRstarnum: "159",
     TRoption: ""
   },
   {
     TRkey: "802",
-    TRlink: "#TopRateLink",
+    TRlink: "#TopRateLink2",
     TRimg: "./img/TR-exp/BOL.jpg",
     TRplace: "DAY TRIP · RIO DE JANEIRO",
     TRtitle: "Sunrise + Secret pool + wild beaches!",
     TRprice: "66",
-    TRstar: "star star4-5",
+    TRstar: " star4-5",
     TRstarnum: "163",
     TRoption: "Also offered in French,Italian and 2 more"
   },
   {
     TRkey: "803",
-    TRlink: "#TopRateLink",
+    TRlink: "#TopRateLink3",
     TRimg: "./img/TR-exp/BRA.jpg",
     TRplace: "PHOTO SHOOT · TOKYO",
     TRtitle: "Your Personal Tokyo Photographer!",
     TRprice: "91",
-    TRstar: "star star4-5",
+    TRstar: " star4-5",
     TRstarnum: "437",
     TRoption: ""
   },
   {
     TRkey: "804",
-    TRlink: "#TopRateLink",
+    TRlink: "#TopRateLink4",
     TRimg: "./img/TR-exp/CHL.jpg",
     TRplace: "DANCE PARTY · WATTHANA",
     TRtitle: "The night to remember in Bangkok",
     TRprice: "44",
-    TRstar: "star star4-5",
+    TRstar: " star4-5",
     TRstarnum: "206",
     TRoption: ""
   },
   {
     TRkey: "805",
-    TRlink: "#TopRateLink",
+    TRlink: "#TopRateLink5",
     TRimg: "./img/TR-exp/DUB.jpg",
     TRplace: "GUIDED HIKE · HAYMARKET",
     TRtitle: "Figure 8 Pools Coastal Adventure Hike",
     TRprice: "106",
-    TRstar: "star star4-5",
+    TRstar: " star4-5",
     TRstarnum: "145",
     TRoption: ""
   },
   {
     TRkey: "806",
-    TRlink: "#TopRateLink",
+    TRlink: "#TopRateLink6",
     TRimg: "./img/TR-exp/Nica.jpg",
     TRplace: "DAY TRIP · LISBON",
     TRtitle: "This is SINTRA - a Day to Remember !",
     TRprice: "72",
-    TRstar: "star star4-5",
+    TRstar: " star4-5",
     TRstarnum: "783",
     TRoption: ""
   },
   {
     TRkey: "807",
-    TRlink: "#TopRateLink",
+    TRlink: "#TopRateLink7",
     TRimg: "./img/TR-exp/PER.jpg",
     TRplace: "SPA VISIT · DESERT HOT SPRINGS",
     TRtitle: "Hot Spring Sunset for Two",
     TRprice: "75",
-    TRstar: "star star4-5",
+    TRstar: " star4-5",
     TRstarnum: "347",
     TRoption: ""
   }

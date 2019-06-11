@@ -16,6 +16,16 @@ a {
   font-family: inherit;
 }
 
+.link-item {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+
 .bg-yellow {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -402,12 +412,9 @@ header {
 }
 
 .A-Home-card {
+  position: relative;
   margin: 1rem;
   width: 25rem;
-}
-
-.A-Home-link {
-  cursor: pointer;
 }
 
 .A-home-i {
@@ -433,12 +440,16 @@ header {
 
 /*----Top-Rated-Section----*/
 .Top-Rated-experiences {
-  display: flex;
+  overflow: hidden;
+}
+
+.Top-Rate-box {
+  position: relative;
 }
 
 .Top-Rate-card {
   margin: 1rem;
-  width: 14rem;
+  width: 13.5rem;
 }
 
 .Top-Rate-link {

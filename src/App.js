@@ -219,7 +219,7 @@ class App extends React.Component {
                 return (
                   <AHome
                     key={AHomeItem.HMkey}
-                    HMliink={AHomeItem.HMlink}
+                    HMlink={AHomeItem.HMlink}
                     HMimg={AHomeItem.HMimg}
                     HMplace={AHomeItem.HMplace}
                     HMtitle={AHomeItem.HMtitle}
@@ -270,7 +270,7 @@ class App extends React.Component {
               </div>
               <FontAwesomeIcon icon="angle-right" className="Top-Rated-i" />
             </div>
-            <div className="Top-Rated-experiences">
+            <div className="Top-Rated-experiences d-flex flex-wrap">
               {TopRateList.map(TopRateItem => {
                 return (
                   <TopRate
