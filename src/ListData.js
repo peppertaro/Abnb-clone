@@ -62,19 +62,19 @@ const optionList = [
   {
     OPkey: "201",
     OPlink: "#Homes",
-    OPimg: "./img/casa.jpg",
+    OPimg: "./img/Option/casa.jpg",
     OPname: "Homes"
   },
   {
     OPkey: "202",
     OPlink: "#Experiences",
-    OPimg: "./img/experiences.jpg",
+    OPimg: "./img/Option/experiences.jpg",
     OPname: "Experiences"
   },
   {
     OPkey: "203",
     OPlink: "#Restaurants",
-    OPimg: "./img/restaurantes.jpg",
+    OPimg: "./img/Option/restaurantes.jpg",
     OPname: "Restaurants"
   }
 ];

@@ -13,7 +13,7 @@ class recommend extends React.Component {
       slidesToScroll: 1
     };
     return (
-      <div class="recommend-box">
+      <div className="recommend-box">
         <Slider {...settings}>
           {recommendList.map(recommendItem => (
             <RecommendBox
