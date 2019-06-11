@@ -12,7 +12,6 @@ import FooterModal from "./Modals/FooterModal";
 import {
   navList,
   optionList,
-  recommendList,
   HomeList,
   BeachList,
   TopRateList
@@ -181,15 +180,7 @@ class App extends React.Component {
           <div className="container">
             <h2 className="title">Recommended for you</h2>
             <div className="recommends">
-              {recommendList.map((recommendItem, i) => (
-                <Recommend
-                  key={recommendItem.RDkey}
-                  RDimg={recommendItem.RDimg}
-                  RDlink={recommendItem.RDlink}
-                  RDtitle={recommendItem.RDtitle}
-                  RDprc={recommendItem.RDprc}
-                />
-              ))}
+              <Recommend />
             </div>
           </div>
         </div>

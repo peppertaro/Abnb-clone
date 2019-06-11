@@ -152,9 +152,9 @@ const HomeList = [
     HMplace: "CAMPER/RV · ALOZAINA",
     HMtitle: "Airstream 'Glamping' in Andalucia!",
     HMprice: "15,161",
-    HMstar: "5",
+    HMstar: "star star5",
     HMstarnum: "84",
-    HMSPhost: "Superhost"
+    HMSPhost: "・・Superhost"
   },
   {
     HMkey: "602",
@@ -163,9 +163,9 @@ const HomeList = [
     HMplace: "ENTIRE APARTMENT · HONGKOU",
     HMtitle: "#2 SHANGHIGH HOME",
     HMprice: "4,548",
-    HMstar: "5",
+    HMstar: "star star5",
     HMstarnum: "390",
-    HMSPhost: "Superhost"
+    HMSPhost: "・Superhost"
   },
   {
     HMkey: "603",
@@ -174,9 +174,9 @@ const HomeList = [
     HMplace: "ISLAND · FERN FOREST",
     HMtitle: "Dreamy Tropical Tree House",
     HMprice: "32,489",
-    HMstar: "5",
+    HMstar: "star star5",
     HMstarnum: "607",
-    HMSPhost: "Superhost"
+    HMSPhost: "・Superhost"
   },
   {
     HMkey: "604",
@@ -185,9 +185,9 @@ const HomeList = [
     HMplace: "HUT · ARMENIA",
     HMtitle: "Romantic Cabana with view",
     HMprice: "4,332",
-    HMstar: "5",
+    HMstar: "star star5",
     HMstarnum: "221",
-    HMSPhost: "Superhost"
+    HMSPhost: "・Superhost"
   },
   {
     HMkey: "605",
@@ -196,9 +196,9 @@ const HomeList = [
     HMplace: "CYCLADIC HOUSE · OIA",
     HMtitle: "Unique Architecture Cave House",
     HMprice: "60,646",
-    HMstar: "5",
+    HMstar: "star star5",
     HMstarnum: "179",
-    HMSPhost: "Superhost"
+    HMSPhost: "・Superhost"
   },
   {
     HMkey: "606",
@@ -207,9 +207,9 @@ const HomeList = [
     HMplace: "ENTIRE HOUSE · FUJIEDA",
     HMtitle: "Japan Charm&Tradition-Yui Valley(easy Tokyo/Kyoto)",
     HMprice: "11,479",
-    HMstar: "5",
+    HMstar: "star star5",
     HMstarnum: "309",
-    HMSPhost: "Superhost"
+    HMSPhost: "・Superhost"
   },
   {
     HMkey: "607",
@@ -218,9 +218,9 @@ const HomeList = [
     HMplace: "ENTIRE APARTMENT · PALERMO",
     HMtitle: "Palazzo Cattolica Art-Apartment",
     HMprice: "10,938",
-    HMstar: "5",
+    HMstar: "star star5",
     HMstarnum: "313",
-    HMSPhost: "Superhost"
+    HMSPhost: "・Superhost"
   },
   {
     HMkey: "608",
@@ -229,9 +229,9 @@ const HomeList = [
     HMplace: "CASTLE · TWENTYNINE PALMS",
     HMtitle: "Tile House",
     HMprice: "19,385",
-    HMstar: "5",
+    HMstar: "star star5",
     HMstarnum: "363",
-    HMSPhost: "Superhost"
+    HMSPhost: "・Superhost"
   }
 ];
 
@@ -281,7 +281,7 @@ const TopRateList = [
     TRplace: "WORKSHOP · CHIANG MAI",
     TRtitle: "Thai Traditional Yantra Tattoo.",
     TRprice: "82",
-    TRstar: "4.99",
+    TRstar: "star star4-5",
     TRstarnum: "159",
     TRoption: ""
   },
@@ -292,7 +292,7 @@ const TopRateList = [
     TRplace: "DAY TRIP · RIO DE JANEIRO",
     TRtitle: "Sunrise + Secret pool + wild beaches!",
     TRprice: "66",
-    TRstar: "4.99",
+    TRstar: "star star4-5",
     TRstarnum: "163",
     TRoption: "Also offered in French,Italian and 2 more"
   },
@@ -303,7 +303,7 @@ const TopRateList = [
     TRplace: "PHOTO SHOOT · TOKYO",
     TRtitle: "Your Personal Tokyo Photographer!",
     TRprice: "91",
-    TRstar: "4.95",
+    TRstar: "star star4-5",
     TRstarnum: "437",
     TRoption: ""
   },
@@ -314,7 +314,7 @@ const TopRateList = [
     TRplace: "DANCE PARTY · WATTHANA",
     TRtitle: "The night to remember in Bangkok",
     TRprice: "44",
-    TRstar: "4.93",
+    TRstar: "star star4-5",
     TRstarnum: "206",
     TRoption: ""
   },
@@ -325,7 +325,7 @@ const TopRateList = [
     TRplace: "GUIDED HIKE · HAYMARKET",
     TRtitle: "Figure 8 Pools Coastal Adventure Hike",
     TRprice: "106",
-    TRstar: "4.93",
+    TRstar: "star star4-5",
     TRstarnum: "145",
     TRoption: ""
   },
@@ -336,7 +336,7 @@ const TopRateList = [
     TRplace: "DAY TRIP · LISBON",
     TRtitle: "This is SINTRA - a Day to Remember !",
     TRprice: "72",
-    TRstar: "4.93",
+    TRstar: "star star4-5",
     TRstarnum: "783",
     TRoption: ""
   },
@@ -347,7 +347,7 @@ const TopRateList = [
     TRplace: "SPA VISIT · DESERT HOT SPRINGS",
     TRtitle: "Hot Spring Sunset for Two",
     TRprice: "75",
-    TRstar: "4.96",
+    TRstar: "star star4-5",
     TRstarnum: "347",
     TRoption: ""
   }

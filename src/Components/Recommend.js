@@ -1,24 +1,31 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import Slider from "react-slick";
 import { recommendList } from "../ListData";
 import RecommendBox from "./RecommendBox";
 
 class recommend extends React.Component {
   render() {
+    const settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesPerRow: 5,
+      slidesToScroll: 1
+    };
     return (
-      <Carousel className="Recommend-box">
-        {recommendList.map((recommendItem, i) => (
-          <Carousel.Item {...RecommendBox.props}>
-            <img className="Carousel-img" src={recommendItem.RDimg} alt="" />
-            <Carousel.Caption className="Carousel-info text-light">
-              <a href={recommendItem.RDlink} className="Carousel-link">
-                <h3 className="Carousel-title">{recommendItem.RDtitle}</h3>
-                <p className="Carousel-prc">{recommendItem.RDprc}</p>
-              </a>
-            </Carousel.Caption>
-          </Carousel.Item>
-        ))}
-      </Carousel>
+      <div class="recommend-box">
+        <Slider {...settings}>
+          {recommendList.map(recommendItem => (
+            <RecommendBox
+              key={recommendItem.RDkey}
+              RDimg={recommendItem.RDimg}
+              RDlink={recommendItem.RDlink}
+              RDtitle={recommendItem.RDtitle}
+              RDprc={recommendItem.RDprc}
+            />
+          ))}
+        </Slider>
+      </div>
     );
   }
 }

@@ -31,6 +31,81 @@ a {
   font-weight: bold;
 }
 
+/*-------Rate variables-----------*/
+$starFull: 1.6rem;
+$starHalf: $starFull / 2;
+
+$star1: $starFull;
+$star1-5: $starFull + $starHalf;
+$star2: $starFull * 2;
+$star2-5: ($starFull * 2) + $starHalf;
+$star3: $starFull * 3;
+$star3-5: ($starFull * 3) + $starHalf;
+$star4: $starFull * 4;
+$star4-5: ($starFull * 4) + $starHalf;
+$star5: $starFull * 5;
+
+.star {
+  position: relative;
+  display: inline-block;
+  width: $starFull * 5;
+  height: $starFull;
+  font-size: $starFull;
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "★★★★★";
+    display: inline-block;
+    height: $starFull;
+    line-height: $starFull;
+  }
+  &:before {
+    color: #ddd;
+  }
+  &:after {
+    color: #ffa500;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+.star0:after {
+  width: 0;
+}
+.star1:after {
+  width: $star1;
+}
+.star1-5:after {
+  width: $star1-5;
+}
+.star2:after {
+  width: $star2;
+}
+.star2-5:after {
+  width: $star2-5;
+}
+.star3:after {
+  width: $star3;
+}
+.star3-5:after {
+  width: $star3-5;
+}
+.star4:after {
+  width: $star4;
+}
+.star4-5:after {
+  width: $star4-5;
+}
+.star5:after {
+  width: $star5;
+}
+
+.wrap {
+  width: 8rem;
+  margin: 0 auto;
+}
+
 @keyframes SlideUp {
   0% {
     opacity: 0;
@@ -363,7 +438,7 @@ header {
 
 .Top-Rate-card {
   margin: 1rem;
-  width: 15rem;
+  width: 14rem;
 }
 
 .Top-Rate-link {
