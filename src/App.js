@@ -8,12 +8,14 @@ import Recommend from "./Components/Recommend";
 import AHome from "./Components/AHome";
 import Beach from "./Components/Beach";
 import TopRate from "./Components/TopRate";
+import Dream from "./Components/Dream";
 import FooterModal from "./Modals/FooterModal";
 import {
   navList,
   optionList,
   HomeList,
   BeachList,
+  DreamList,
   TopRateList
 } from "./ListData";
 import "./App.scss";
@@ -242,7 +244,7 @@ class App extends React.Component {
         <div className="Beach-section">
           <div className="container">
             <h2 className="title">Head to the beach</h2>
-            <div className="Beaches d-flex">
+            <div className="Beaches">
               <Carousel className="Beach m-2">
                 {BeachList.map(beachItem => {
                   return (
@@ -293,6 +295,27 @@ class App extends React.Component {
             </a>
           </div>
         </div>
+        <div className="Dream-section">
+          <div className="container">
+            <h2 className="title">Dream destinations</h2>
+            <div className="Dreams ">
+              <Carousel className="Dream m-2 d-flex">
+                {DreamList.map(DreamItem => {
+                  return (
+                    <Dream
+                      key={DreamItem.DRkey}
+                      DRlink={DreamItem.DRlink}
+                      DRimg={DreamItem.DRimg}
+                      DRtitle={DreamItem.DRtitle}
+                      DRprc={DreamItem.DRprc}
+                    />
+                  );
+                })}
+              </Carousel>
+            </div>
+          </div>
+        </div>
+
         <FooterModal />
       </div>
     );

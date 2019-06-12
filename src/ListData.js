@@ -353,44 +353,89 @@ const TopRateList = [
   }
 ];
 
+const DreamList = [
+  {
+    DRkey: "901",
+    DRlink: "#DreamLink1",
+    DRimg: "./img/DR-exp/Nica.jpg",
+    DRplace: "Paris",
+    DRprc: "12,300"
+  },
+  {
+    DRkey: "902",
+    DRlink: "#DreamLink2",
+    DRimg: "./img/DR-exp//BIL.jpg",
+    DRplace: "New York",
+    DRprc: "13,718"
+  },
+  {
+    DRkey: "903",
+    DRlink: "#DreamLink3",
+    DRimg: "./img/DR-exp/BOL.jpg",
+    DRplace: "Los Angeles",
+    DRprc: "14,816"
+  },
+  {
+    DRkey: "904",
+    DRlink: "#DreamLink4",
+    DRimg: "./img/DR-exp/BRA.jpg",
+    DRplace: "Paris",
+    DRprc: "12,300"
+  },
+  {
+    DRkey: "905",
+    DRlink: "#DreamLink5",
+    DRimg: "./img/DR-exp/CHL.jpg",
+    DRplace: "London",
+    DRprc: "13,801"
+  },
+  {
+    DRkey: "906",
+    DRlink: "#DreamLink6",
+    DRimg: "./img/DR-exp/DUB.jpg",
+    DRplace: "Singapore",
+    DRprc: "10,257"
+  }
+];
+
 const FooterABList = [
   {
-    FTkey: "901",
+    FTkey: "9001",
     FTABid: "FTAB-careers",
     FTlink: "#careers",
     FTname: "Careers",
     FTbadge: ""
   },
   {
-    FTkey: "902",
+    FTkey: "9002",
     FTABid: "FTAB-press",
     FTlink: "#press",
     FTname: "Press",
     FTbadge: ""
   },
   {
-    FTkey: "903",
+    FTkey: "9003",
     FTABid: "FTAB-policies",
     FTlink: "#policies",
     FTname: "Policies",
     FTbadge: ""
   },
   {
-    FTkey: "904",
+    FTkey: "9004",
     FTABid: "FTAB-help",
     FTlink: "#help",
     FTname: "Help",
     FTbadge: ""
   },
   {
-    FTkey: "905",
+    FTkey: "9005",
     FTABid: "FTAB-Diversity",
     FTlink: "#diversity",
     FTname: "Diversity & Belonging",
     FTbadge: ""
   },
   {
-    FTkey: "906",
+    FTkey: "9006",
     FTABid: "FTAB-Accesibility",
     FTlink: "#accesibility",
     FTname: "Accesibility",
@@ -400,49 +445,49 @@ const FooterABList = [
 
 const FooterDCVList = [
   {
-    FTkey: "911",
+    FTkey: "9011",
     FTDCVid: "FTDCV-T&S",
     FTlink: "#T&S",
     FTname: "Trust & Safety",
     FTbadge: ""
   },
   {
-    FTkey: "912",
+    FTkey: "9012",
     FTDCVid: "FTDCV-TVC",
     FTlink: "#Travel Credit",
     FTname: "Travel Credit",
     FTbadge: ""
   },
   {
-    FTkey: "913",
+    FTkey: "9013",
     FTDCVid: "FTDCV-GiftCards",
     FTlink: "#GiftCards",
     FTname: "Gift Cards",
     FTbadge: ""
   },
   {
-    FTkey: "914",
+    FTkey: "9014",
     FTDCVid: "FTDCV-AirbnbCitizen",
     FTlink: "#AirbnbCitizen",
     FTname: "Airbnb Citizen",
     FTbadge: ""
   },
   {
-    FTkey: "915",
+    FTkey: "9015",
     FTDCVid: "FTDCV-BzTravel",
     FTlink: "#BusinessTravel",
     FTname: "Business Travel",
     FTbadge: ""
   },
   {
-    FTkey: "916",
+    FTkey: "9016",
     FTDCVid: "FTDCV-Guidebooks",
     FTlink: "#Guidebooks",
     FTname: "Guidebooks",
     FTbadge: ""
   },
   {
-    FTkey: "917",
+    FTkey: "9017",
     FTDCVid: "FTDCV-Airbnbmag",
     FTlink: "#Airbnbmag",
     FTname: "Airbnbmag",
@@ -452,42 +497,42 @@ const FooterDCVList = [
 
 const FooterHTList = [
   {
-    FTkey: "921",
+    FTkey: "9021",
     FTHTid: "FTHT-WhyHost",
     FTlink: "#WhyHost",
     FTname: "Why Host",
     FTbadge: ""
   },
   {
-    FTkey: "922",
+    FTkey: "9022",
     FTHTid: "FTHT-Hospitality",
     FTlink: "#Hospitality",
     FTname: "Hospitality",
     FTbadge: ""
   },
   {
-    FTkey: "923",
+    FTkey: "9023",
     FTHTid: "FTHT-RspHT",
     FTlink: "#ResponsibleHosting",
     FTname: "Responsible Hosting",
     FTbadge: ""
   },
   {
-    FTkey: "924",
+    FTkey: "9024",
     FTHTid: "FTHT-ComCenter",
     FTlink: "#ComCenter",
     FTname: "Community Center",
     FTbadge: ""
   },
   {
-    FTkey: "925",
+    FTkey: "9025",
     FTHTid: "FTHT-HostExp",
     FTlink: "#HostExp",
     FTname: "Host an Experience",
     FTbadge: "New"
   },
   {
-    FTkey: "926",
+    FTkey: "9026",
     FTHTid: "FTHT-OpenHomes",
     FTlink: "#OpenHomes",
     FTname: "Open Homes",
@@ -503,6 +548,7 @@ export {
   HomeList,
   BeachList,
   TopRateList,
+  DreamList,
   FooterABList,
   FooterDCVList,
   FooterHTList

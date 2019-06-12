@@ -3,16 +3,16 @@ import { Carousel } from "react-bootstrap";
 class Beach extends React.Component {
   render() {
     return (
-      <Carousel.Item className="Carousel-img-box">
+      <Carousel.Item className="Beach-box Carousel-img-box">
         <img
           className="Carousel-img d-block w-100"
           src={this.props.BHimg}
           alt=""
         />
-        <Carousel.Caption className="Carousel-info text-light">
-          <a href={this.props.BHlink} className="Carousel-link">
-            <h3 className="Carousel-title">{this.props.BHtitle}</h3>
-            <p className="Carousel-prc">{this.props.BHprc}</p>
+        <Carousel.Caption className="Beach-info Carousel-info text-light">
+          <a href={this.props.BHlink} className="Beach-link Carousel-link">
+            <h3 className="Beach-title Carousel-title">{this.props.BHtitle}</h3>
+            <p className="Beach-prc Carousel-prc">{this.props.BHprc}</p>
           </a>
         </Carousel.Caption>
       </Carousel.Item>
