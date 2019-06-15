@@ -324,7 +324,7 @@ header {
   padding-bottom: 3rem;
 }
 
-.recommend-box {
+.slider-box {
   border-radius: 0.5rem;
   margin: 1rem;
   height: 30rem;
@@ -332,9 +332,8 @@ header {
   overflow: hidden;
 }
 
-.rcmd-btn {
+.slider-btn {
   font-size: 3.5rem;
-
   border-radius: 25%;
   z-index: 10;
 }
@@ -350,7 +349,14 @@ header {
 
 $i: 0;
 @for $i from 0 through 29 {
-  .cards-slider.active-slide-#{$i} #card-#{$i} {
+  .RDcards-slider.active-slide-#{$i} #RDcard-#{$i} {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+}
+
+@for $i from 0 through 29 {
+  .BHcards-slider.active-slide-#{$i} #BHcard-#{$i} {
     opacity: 0.9;
     transform: scale(1);
   }
@@ -475,6 +481,10 @@ $i: 0;
 .homeOther-i {
   font-size: 1.2rem;
   margin-left: 0.7rem;
+}
+/*----Beach-Section----*/
+.Beach-box {
+  height: 30rem;
 }
 
 /*----Top-Rated-Section----*/

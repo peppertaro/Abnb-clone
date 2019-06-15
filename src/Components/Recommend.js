@@ -30,31 +30,42 @@ class Recommend extends React.Component {
 
   render() {
     return (
-      <div className="recommend-box d-flex">
-        <button className="rcmd-btn" onClick={() => this.Prevbtn()}>
-          {" "}
-          <FontAwesomeIcon icon="angle-left" className="angle-i m-4" />
-        </button>
-        <div className={`cards-slider active-slide-${this.state.rcmd.RDindex}`}>
-          <div
-            className="card-slider-wrapper d-flex"
-            style={{
-              transform: `translateX(-${this.state.rcmd.RDindex *
-                (100 / this.state.rcmdList.length)}%)`
-            }}
-          >
-            {recommendList.map(recommendList => (
-              <RecommendBox
-                key={recommendList.DRkey}
-                recommendList={recommendList}
-              />
-            ))}
+      <div className="recommend-section">
+        <div className="container">
+          <h2 className="title">Recommended for you</h2>
+          <div className="recommends">
+            <div className="recommend-box slider-box d-flex">
+              <button className="slider-btn" onClick={() => this.Prevbtn()}>
+                {" "}
+                <FontAwesomeIcon icon="angle-left" className="angle-i m-4" />
+              </button>
+              <div
+                className={`RDcards-slider cards-slider active-slide-${
+                  this.state.rcmd.RDindex
+                }`}
+              >
+                <div
+                  className="card-slider-wrapper d-flex"
+                  style={{
+                    transform: `translateX(-${this.state.rcmd.RDindex *
+                      (100 / this.state.rcmdList.length)}%)`
+                  }}
+                >
+                  {recommendList.map(recommendList => (
+                    <RecommendBox
+                      key={recommendList.DRkey}
+                      recommendList={recommendList}
+                    />
+                  ))}
+                </div>
+              </div>
+              <button className="slider-btn" onClick={() => this.Nextbtn()}>
+                {" "}
+                <FontAwesomeIcon icon="angle-right" className="angle-i m-4" />
+              </button>
+            </div>
           </div>
         </div>
-        <button className="rcmd-btn" onClick={() => this.Nextbtn()}>
-          {" "}
-          <FontAwesomeIcon icon="angle-right" className="angle-i m-4" />
-        </button>
       </div>
     );
   }

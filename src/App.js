@@ -14,7 +14,6 @@ import {
   navList,
   optionList,
   HomeList,
-  BeachList,
   DreamList,
   TopRateList
 } from "./ListData";
@@ -178,14 +177,7 @@ class App extends React.Component {
             </div>
           </div>
         </div>
-        <div className="recommend-section">
-          <div className="container">
-            <h2 className="title">Recommended for you</h2>
-            <div className="recommends">
-              <Recommend />
-            </div>
-          </div>
-        </div>
+        <Recommend />
         <div id="exp" className="experience-section">
           <div className="container">
             <a href="#experience" alt="">
@@ -241,26 +233,7 @@ class App extends React.Component {
             </div>
           </div>
         </div>
-        <div className="Beach-section">
-          <div className="container">
-            <h2 className="title">Head to the beach</h2>
-            <div className="Beaches">
-              <Carousel className="Beach m-2">
-                {BeachList.map(beachItem => {
-                  return (
-                    <Beach
-                      key={beachItem.BHkey}
-                      BHlink={beachItem.BHlink}
-                      BHimg={beachItem.BHimg}
-                      BHtitle={beachItem.BHtitle}
-                      BHprc={beachItem.BHprc}
-                    />
-                  );
-                })}
-              </Carousel>
-            </div>
-          </div>
-        </div>
+        <Beach />
         <div className="Top-Rated-experience-Section">
           <div className="container">
             <div className="Top-Rated-title Title-box d-flex">

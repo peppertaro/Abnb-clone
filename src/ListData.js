@@ -1,30 +1,30 @@
 const navList = [
   {
-    NVkey: "101",
+    NVkey: 101,
     NVid: "h-home",
     NVlink: "#home",
     NVname: "Host a home"
   },
   {
-    NVkey: "102",
+    NVkey: 102,
     NVid: "h-exp",
     NVlink: "#exp",
     NVname: "Host an experience"
   },
   {
-    NVkey: "103",
+    NVkey: 103,
     NVid: "help",
     NVlink: "#help",
     NVname: "Help"
   },
   {
-    NVkey: "104",
+    NVkey: 104,
     NVid: "h-signup",
     NVlink: "#signup",
     NVname: "Sign up"
   },
   {
-    NVkey: "105",
+    NVkey: 105,
     NVid: "h-login",
     NVlink: "#login",
     NVname: "Log in"
@@ -33,7 +33,7 @@ const navList = [
 
 const GMTypeList = [
   {
-    GMkey: "111",
+    GMkey: 111,
     GMtype: "Adults",
     GMdsc: "",
     GMnumID: "GMnumAdults",
@@ -41,7 +41,7 @@ const GMTypeList = [
     GMidPlus: "GMAdultsPlus"
   },
   {
-    GMkey: "112",
+    GMkey: 112,
     GMtype: "Children",
     GMdsc: "Ages 2-12",
     GMnumID: "GMnumChildren",
@@ -49,7 +49,7 @@ const GMTypeList = [
     GMidPlus: "GMChildrenPlus"
   },
   {
-    GMkey: "113",
+    GMkey: 113,
     GMtype: "Infants",
     GMdsc: "Under 2",
     GMnumID: "GMnumInfants",
@@ -60,19 +60,19 @@ const GMTypeList = [
 
 const optionList = [
   {
-    OPkey: "201",
+    OPkey: 201,
     OPlink: "#Homes",
     OPimg: "./img/Option/casa.jpg",
     OPname: "Homes"
   },
   {
-    OPkey: "202",
+    OPkey: 202,
     OPlink: "#Experiences",
     OPimg: "./img/Option/experiences.jpg",
     OPname: "Experiences"
   },
   {
-    OPkey: "203",
+    OPkey: 203,
     OPlink: "#Restaurants",
     OPimg: "./img/Option/restaurantes.jpg",
     OPname: "Restaurants"
@@ -80,7 +80,7 @@ const optionList = [
 ];
 const recommendList = [
   {
-    RDkey: "401",
+    RDkey: 401,
     RDindex: 0,
     RDimg: "./img/rcmd/osaka.jpg",
     RDtitle: "Osaka",
@@ -88,7 +88,7 @@ const recommendList = [
     RDprc: "6,160JPY/night average"
   },
   {
-    RDkey: "402",
+    RDkey: 402,
     RDindex: 1,
     RDimg: "./img/rcmd/okinawa.jpg",
     RDtitle: "Okinawa",
@@ -96,7 +96,7 @@ const recommendList = [
     RDprc: "8,846 JPY/night average"
   },
   {
-    RDkey: "403",
+    RDkey: 403,
     RDindex: 2,
     RDimg: "./img/rcmd/kyoto.jpg",
     RDtitle: "Kyoto",
@@ -104,7 +104,7 @@ const recommendList = [
     RDprc: "9,543JPY/night average"
   },
   {
-    RDkey: "404",
+    RDkey: 404,
     RDindex: 3,
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
@@ -112,7 +112,7 @@ const recommendList = [
     RDprc: "18,828JPY/night average"
   },
   {
-    RDkey: "405",
+    RDkey: 405,
     RDindex: 4,
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
@@ -120,7 +120,7 @@ const recommendList = [
     RDprc: "18,828JPY/night average"
   },
   {
-    RDkey: "406",
+    RDkey: 406,
     RDindex: 5,
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
@@ -128,7 +128,7 @@ const recommendList = [
     RDprc: "18,828JPY/night average"
   },
   {
-    RDkey: "407",
+    RDkey: 407,
     RDindex: 6,
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
@@ -136,7 +136,7 @@ const recommendList = [
     RDprc: "18,828JPY/night average"
   },
   {
-    RDkey: "408",
+    RDkey: 408,
     RDindex: 7,
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
@@ -144,7 +144,7 @@ const recommendList = [
     RDprc: "18,828JPY/night average"
   },
   {
-    RDkey: "409",
+    RDkey: 409,
     RDindex: 8,
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
@@ -155,7 +155,7 @@ const recommendList = [
 
 const HomeList = [
   {
-    HMkey: "601",
+    HMkey: 601,
     HMlink: "#HomeListLink1",
     HMimg: "./img/Home/Aiako.jpg",
     HMplace: "CAMPER/RV · ALOZAINA",
@@ -166,7 +166,7 @@ const HomeList = [
     HMSPhost: " · Superhost"
   },
   {
-    HMkey: "602",
+    HMkey: 602,
     HMlink: "#HomeListLink2",
     HMimg: "./img/Home/BCN.jpg",
     HMplace: "ENTIRE APARTMENT · HONGKOU",
@@ -177,7 +177,7 @@ const HomeList = [
     HMSPhost: " · Superhost"
   },
   {
-    HMkey: "603",
+    HMkey: 603,
     HMlink: "#HomeListLink3",
     HMimg: "./img/Home/Beldui.jpg",
     HMplace: "ISLAND · FERN FOREST",
@@ -188,7 +188,7 @@ const HomeList = [
     HMSPhost: " · Superhost"
   },
   {
-    HMkey: "604",
+    HMkey: 604,
     HMlink: "#HomeListLink4",
     HMimg: "./img/Home/Bruja.jpg",
     HMplace: "HUT · ARMENIA",
@@ -199,7 +199,7 @@ const HomeList = [
     HMSPhost: " · Superhost"
   },
   {
-    HMkey: "605",
+    HMkey: 605,
     HMlink: "#HomeListLink5",
     HMimg: "./img/Home/Donosti.jpg",
     HMplace: "CYCLADIC HOUSE · OIA",
@@ -210,7 +210,7 @@ const HomeList = [
     HMSPhost: " · Superhost"
   },
   {
-    HMkey: "606",
+    HMkey: 606,
     HMlink: "#HomeListLink6",
     HMimg: "./img/Home/Fuji.jpg",
     HMplace: "ENTIRE HOUSE · FUJIEDA",
@@ -221,7 +221,7 @@ const HomeList = [
     HMSPhost: " · Superhost"
   },
   {
-    HMkey: "607",
+    HMkey: 607,
     HMlink: "#HomeListLink7",
     HMimg: "./img/Home/Gaztelugatze.jpg",
     HMplace: "ENTIRE APARTMENT · PALERMO",
@@ -232,7 +232,7 @@ const HomeList = [
     HMSPhost: " · Superhost"
   },
   {
-    HMkey: "608",
+    HMkey: 608,
     HMlink: "#HomeListLink8",
     HMimg: "./img/Home/Getaria.jpg",
     HMplace: "CASTLE · TWENTYNINE PALMS",
@@ -244,38 +244,43 @@ const HomeList = [
   }
 ];
 
-const BeachList = [
+const beachList = [
   {
-    BHkey: "701",
-    BHlink: "#link",
+    BHkey: 701,
+    BHindex: 0,
+    BHlink: "#link1",
     BHimg: "./img/bch/osaka.jpg",
     BHtitle: "Osaka",
     BHprc: "6,160JPY/night average"
   },
   {
-    BHkey: "702",
-    BHlink: "#link",
+    BHkey: 702,
+    BHindex: 1,
+    BHlink: "#link2",
     BHimg: "./img/bch/kyoto.jpg",
     BHtitle: "kyoto",
     BHprc: "6,160JPY/night average"
   },
   {
-    BHkey: "703",
-    BHlink: "#link",
+    BHkey: 703,
+    BHindex: 2,
+    BHlink: "#link3",
     BHimg: "./img/bch/oahu.jpg",
     BHtitle: "oahu",
     BHprc: "6,160JPY/night average"
   },
   {
-    BHkey: "704",
-    BHlink: "#link",
+    BHkey: 704,
+    BHindex: 3,
+    BHlink: "#link4",
     BHimg: "./img/bch/okinawa.jpg",
     BHtitle: "okinawa",
     BHprc: "6,160JPY/night average"
   },
   {
-    BHkey: "705",
-    BHlink: "#link",
+    BHkey: 705,
+    BHindex: 4,
+    BHlink: "#link5",
     BHimg: "./img/bch/osaka.jpg",
     BHtitle: "Osaka",
     BHprc: "6,160JPY/night average"
@@ -284,7 +289,7 @@ const BeachList = [
 
 const TopRateList = [
   {
-    TRkey: "801",
+    TRkey: 801,
     TRlink: "#TopRateLink1",
     TRimg: "./img/TR-exp/BIL.jpg",
     TRplace: "WORKSHOP · CHIANG MAI",
@@ -295,7 +300,7 @@ const TopRateList = [
     TRoption: ""
   },
   {
-    TRkey: "802",
+    TRkey: 802,
     TRlink: "#TopRateLink2",
     TRimg: "./img/TR-exp/BOL.jpg",
     TRplace: "DAY TRIP · RIO DE JANEIRO",
@@ -306,7 +311,7 @@ const TopRateList = [
     TRoption: "Also offered in French,Italian and 2 more"
   },
   {
-    TRkey: "803",
+    TRkey: 803,
     TRlink: "#TopRateLink3",
     TRimg: "./img/TR-exp/BRA.jpg",
     TRplace: "PHOTO SHOOT · TOKYO",
@@ -317,7 +322,7 @@ const TopRateList = [
     TRoption: ""
   },
   {
-    TRkey: "804",
+    TRkey: 804,
     TRlink: "#TopRateLink4",
     TRimg: "./img/TR-exp/CHL.jpg",
     TRplace: "DANCE PARTY · WATTHANA",
@@ -328,7 +333,7 @@ const TopRateList = [
     TRoption: ""
   },
   {
-    TRkey: "805",
+    TRkey: 805,
     TRlink: "#TopRateLink5",
     TRimg: "./img/TR-exp/DUB.jpg",
     TRplace: "GUIDED HIKE · HAYMARKET",
@@ -339,7 +344,7 @@ const TopRateList = [
     TRoption: ""
   },
   {
-    TRkey: "806",
+    TRkey: 806,
     TRlink: "#TopRateLink6",
     TRimg: "./img/TR-exp/Nica.jpg",
     TRplace: "DAY TRIP · LISBON",
@@ -350,7 +355,7 @@ const TopRateList = [
     TRoption: ""
   },
   {
-    TRkey: "807",
+    TRkey: 807,
     TRlink: "#TopRateLink7",
     TRimg: "./img/TR-exp/PER.jpg",
     TRplace: "SPA VISIT · DESERT HOT SPRINGS",
@@ -364,42 +369,42 @@ const TopRateList = [
 
 const DreamList = [
   {
-    DRkey: "901",
+    DRkey: 901,
     DRlink: "#DreamLink1",
     DRimg: "./img/DR-exp/Nica.jpg",
     DRplace: "Paris",
     DRprc: "12,300"
   },
   {
-    DRkey: "902",
+    DRkey: 902,
     DRlink: "#DreamLink2",
     DRimg: "./img/DR-exp//BIL.jpg",
     DRplace: "New York",
     DRprc: "13,718"
   },
   {
-    DRkey: "903",
+    DRkey: 903,
     DRlink: "#DreamLink3",
     DRimg: "./img/DR-exp/BOL.jpg",
     DRplace: "Los Angeles",
     DRprc: "14,816"
   },
   {
-    DRkey: "904",
+    DRkey: 904,
     DRlink: "#DreamLink4",
     DRimg: "./img/DR-exp/BRA.jpg",
     DRplace: "Paris",
     DRprc: "12,300"
   },
   {
-    DRkey: "905",
+    DRkey: 905,
     DRlink: "#DreamLink5",
     DRimg: "./img/DR-exp/CHL.jpg",
     DRplace: "London",
     DRprc: "13,801"
   },
   {
-    DRkey: "906",
+    DRkey: 906,
     DRlink: "#DreamLink6",
     DRimg: "./img/DR-exp/DUB.jpg",
     DRplace: "Singapore",
@@ -409,42 +414,42 @@ const DreamList = [
 
 const FooterABList = [
   {
-    FTkey: "9001",
+    FTkey: 9001,
     FTABid: "FTAB-careers",
     FTlink: "#careers",
     FTname: "Careers",
     FTbadge: ""
   },
   {
-    FTkey: "9002",
+    FTkey: 9002,
     FTABid: "FTAB-press",
     FTlink: "#press",
     FTname: "Press",
     FTbadge: ""
   },
   {
-    FTkey: "9003",
+    FTkey: 9003,
     FTABid: "FTAB-policies",
     FTlink: "#policies",
     FTname: "Policies",
     FTbadge: ""
   },
   {
-    FTkey: "9004",
+    FTkey: 9004,
     FTABid: "FTAB-help",
     FTlink: "#help",
     FTname: "Help",
     FTbadge: ""
   },
   {
-    FTkey: "9005",
+    FTkey: 9005,
     FTABid: "FTAB-Diversity",
     FTlink: "#diversity",
     FTname: "Diversity & Belonging",
     FTbadge: ""
   },
   {
-    FTkey: "9006",
+    FTkey: 9006,
     FTABid: "FTAB-Accesibility",
     FTlink: "#accesibility",
     FTname: "Accesibility",
@@ -454,49 +459,49 @@ const FooterABList = [
 
 const FooterDCVList = [
   {
-    FTkey: "9011",
+    FTkey: 9011,
     FTDCVid: "FTDCV-T&S",
     FTlink: "#T&S",
     FTname: "Trust & Safety",
     FTbadge: ""
   },
   {
-    FTkey: "9012",
+    FTkey: 9012,
     FTDCVid: "FTDCV-TVC",
     FTlink: "#Travel Credit",
     FTname: "Travel Credit",
     FTbadge: ""
   },
   {
-    FTkey: "9013",
+    FTkey: 9013,
     FTDCVid: "FTDCV-GiftCards",
     FTlink: "#GiftCards",
     FTname: "Gift Cards",
     FTbadge: ""
   },
   {
-    FTkey: "9014",
+    FTkey: 9014,
     FTDCVid: "FTDCV-AirbnbCitizen",
     FTlink: "#AirbnbCitizen",
     FTname: "Airbnb Citizen",
     FTbadge: ""
   },
   {
-    FTkey: "9015",
+    FTkey: 9015,
     FTDCVid: "FTDCV-BzTravel",
     FTlink: "#BusinessTravel",
     FTname: "Business Travel",
     FTbadge: ""
   },
   {
-    FTkey: "9016",
+    FTkey: 9016,
     FTDCVid: "FTDCV-Guidebooks",
     FTlink: "#Guidebooks",
     FTname: "Guidebooks",
     FTbadge: ""
   },
   {
-    FTkey: "9017",
+    FTkey: 9017,
     FTDCVid: "FTDCV-Airbnbmag",
     FTlink: "#Airbnbmag",
     FTname: "Airbnbmag",
@@ -506,42 +511,42 @@ const FooterDCVList = [
 
 const FooterHTList = [
   {
-    FTkey: "9021",
+    FTkey: 9021,
     FTHTid: "FTHT-WhyHost",
     FTlink: "#WhyHost",
     FTname: "Why Host",
     FTbadge: ""
   },
   {
-    FTkey: "9022",
+    FTkey: 9022,
     FTHTid: "FTHT-Hospitality",
     FTlink: "#Hospitality",
     FTname: "Hospitality",
     FTbadge: ""
   },
   {
-    FTkey: "9023",
+    FTkey: 9023,
     FTHTid: "FTHT-RspHT",
     FTlink: "#ResponsibleHosting",
     FTname: "Responsible Hosting",
     FTbadge: ""
   },
   {
-    FTkey: "9024",
+    FTkey: 9024,
     FTHTid: "FTHT-ComCenter",
     FTlink: "#ComCenter",
     FTname: "Community Center",
     FTbadge: ""
   },
   {
-    FTkey: "9025",
+    FTkey: 9025,
     FTHTid: "FTHT-HostExp",
     FTlink: "#HostExp",
     FTname: "Host an Experience",
     FTbadge: "New"
   },
   {
-    FTkey: "9026",
+    FTkey: 9026,
     FTHTid: "FTHT-OpenHomes",
     FTlink: "#OpenHomes",
     FTname: "Open Homes",
@@ -555,7 +560,7 @@ export {
   optionList,
   recommendList,
   HomeList,
-  BeachList,
+  beachList,
   TopRateList,
   DreamList,
   FooterABList,
