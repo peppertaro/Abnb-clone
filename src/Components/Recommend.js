@@ -53,7 +53,7 @@ class Recommend extends React.Component {
                 >
                   {recommendList.map(recommendList => (
                     <RecommendBox
-                      key={recommendList.DRkey}
+                      key={recommendList.RDkey}
                       recommendList={recommendList}
                     />
                   ))}

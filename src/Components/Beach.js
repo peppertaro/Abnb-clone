@@ -52,7 +52,7 @@ class Beach extends React.Component {
                   }}
                 >
                   {beachList.map(beachList => (
-                    <BeachBox key={beachList.DRkey} beachList={beachList} />
+                    <BeachBox key={beachList.BHkey} beachList={beachList} />
                   ))}
                 </div>
               </div>
