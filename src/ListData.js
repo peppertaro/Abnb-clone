@@ -81,6 +81,7 @@ const optionList = [
 const recommendList = [
   {
     RDkey: "401",
+    RDindex: 0,
     RDimg: "./img/rcmd/osaka.jpg",
     RDtitle: "Osaka",
     RDlink: "#Osaka",
@@ -88,6 +89,7 @@ const recommendList = [
   },
   {
     RDkey: "402",
+    RDindex: 1,
     RDimg: "./img/rcmd/okinawa.jpg",
     RDtitle: "Okinawa",
     RDlink: "#Okinawa",
@@ -95,6 +97,7 @@ const recommendList = [
   },
   {
     RDkey: "403",
+    RDindex: 2,
     RDimg: "./img/rcmd/kyoto.jpg",
     RDtitle: "Kyoto",
     RDlink: "#Kyoto",
@@ -102,6 +105,7 @@ const recommendList = [
   },
   {
     RDkey: "404",
+    RDindex: 3,
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
     RDlink: "#Oahu",
@@ -109,6 +113,7 @@ const recommendList = [
   },
   {
     RDkey: "405",
+    RDindex: 4,
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
     RDlink: "#Oahu",
@@ -116,6 +121,7 @@ const recommendList = [
   },
   {
     RDkey: "406",
+    RDindex: 5,
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
     RDlink: "#Oahu",
@@ -123,6 +129,7 @@ const recommendList = [
   },
   {
     RDkey: "407",
+    RDindex: 6,
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
     RDlink: "#Oahu",
@@ -130,6 +137,7 @@ const recommendList = [
   },
   {
     RDkey: "408",
+    RDindex: 7,
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
     RDlink: "#Oahu",
@@ -137,6 +145,7 @@ const recommendList = [
   },
   {
     RDkey: "409",
+    RDindex: 8,
     RDimg: "./img/rcmd/oahu.jpg",
     RDtitle: "Oahu",
     RDlink: "#Oahu",

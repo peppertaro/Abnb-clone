@@ -3,8 +3,18 @@
   box-sizing: border-box;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -308,35 +318,64 @@ header {
   font-size: 1.2rem;
   margin-left: 0.7rem;
 }
-/*-----------CarouselCSSs------------*/
+/*-----------SlideCSSs------------*/
 .recommends {
   display: flex;
   padding-bottom: 3rem;
 }
 
-.recommend {
-  background: rgba(0, 0, 0, 0.5);
+.recommend-box {
   border-radius: 0.5rem;
   margin: 1rem;
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
 }
 
-.Carousel-img-box {
+.rcmd-btn {
+  font-size: 3.5rem;
+
+  border-radius: 25%;
+  z-index: 10;
+}
+
+.cards-slider {
+  position: relative;
+  margin: 0 auto;
+}
+.card-slider-wrapper {
+  position: absolute;
+  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+$i: 0;
+@for $i from 0 through 29 {
+  .cards-slider.active-slide-#{$i} #card-#{$i} {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+}
+
+.Slide-img-box {
   position: relative;
   width: 20rem;
   height: 25rem;
+  transform: scale(0.7);
+  opacity: 0.2;
+  transition: opacity 300ms linear,
+    transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-.Carousel-link {
+.Slide-link {
   cursor: pointer;
 }
-.Carousel-img {
+.Slide-img {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
-  opacity: 0.7;
 }
-.Carousel-info {
+.Slide-info {
   position: absolute;
   z-index: 10;
   top: 80%;
@@ -345,7 +384,7 @@ header {
   -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
-.Carousel-title {
+.Slide-title {
   font-size: 1.5rem;
 }
 
