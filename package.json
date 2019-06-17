@@ -1,5 +1,5 @@
 {
-  "homepage": "https://git.heroku.com/tabnb-clone.git",
+  "homepage": "http://peppertaro.github.io/Abnb-clone",
   "name": "egia",
   "version": "0.1.0",
   "private": true,
@@ -27,7 +27,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postinstall": "react-scripts build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,9 +45,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "css-loader": "^3.0.0",
-    "style-loader": "^0.23.1",
-    "webpack-cli": "^3.3.4"
-  }
+  "devDependencies": {}
 }
