@@ -45,7 +45,6 @@
   },
   "devDependencies": {
     "css-loader": "^2.1.1",
-    "gh-pages": "^2.0.1",
     "style-loader": "^0.23.1",
     "webpack-cli": "^3.3.1"
   }
