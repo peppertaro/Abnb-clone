@@ -348,14 +348,14 @@ header {
 }
 
 $i: 0;
-@for $i from 0 through 29 {
+@for $i from 0 through 8 {
   .RDcards-slider.active-slide-#{$i} #RDcard-#{$i} {
     opacity: 0.9;
     transform: scale(1);
   }
 }
 
-@for $i from 0 through 29 {
+@for $i from 0 through 4 {
   .BHcards-slider.active-slide-#{$i} #BHcard-#{$i} {
     opacity: 0.9;
     transform: scale(1);
