@@ -10,15 +10,9 @@ import Beach from "./Components/Beach";
 import TopRate from "./Components/TopRate";
 import Dream from "./Components/Dream";
 import FooterModal from "./Modals/FooterModal";
-import {
-  navList,
-  optionList,
-  HomeList,
-  DreamList,
-  TopRateList
-} from "./ListData";
+import { navList, optionList, HomeList, TopRateList } from "./ListData";
 import "./App.scss";
-import { Button, Carousel } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAirbnb } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -268,27 +262,7 @@ class App extends React.Component {
             </a>
           </div>
         </div>
-        <div className="Dream-section">
-          <div className="container">
-            <h2 className="title">Dream destinations</h2>
-            <div className="Dreams ">
-              <Carousel className="Dream m-2 d-flex">
-                {DreamList.map(DreamItem => {
-                  return (
-                    <Dream
-                      key={DreamItem.DRkey}
-                      DRlink={DreamItem.DRlink}
-                      DRimg={DreamItem.DRimg}
-                      DRtitle={DreamItem.DRtitle}
-                      DRprc={DreamItem.DRprc}
-                    />
-                  );
-                })}
-              </Carousel>
-            </div>
-          </div>
-        </div>
-
+        <Dream />
         <FooterModal />
       </div>
     );
