@@ -1,9 +1,17 @@
 {
+<<<<<<< HEAD
+=======
+  "homepage": "http://peppertaro.github.io/Abnb-clone",
+>>>>>>> b3ecb274a2d19228c164020b146774a54bc91ad6
   "name": "egia",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
+<<<<<<< HEAD
+=======
+    "@fortawesome/free-brands-svg-icons": "^5.8.2",
+>>>>>>> b3ecb274a2d19228c164020b146774a54bc91ad6
     "@fortawesome/free-solid-svg-icons": "^5.8.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bootstrap": "^4.3.1",
@@ -12,7 +20,13 @@
     "popper.js": "^1.15.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
+<<<<<<< HEAD
     "react-dom": "^16.8.6",
+=======
+    "react-datepicker": "^2.6.0",
+    "react-dom": "^16.8.6",
+    "react-modal": "^3.8.1",
+>>>>>>> b3ecb274a2d19228c164020b146774a54bc91ad6
     "react-scripts": "3.0.0",
     "react-slick": "^0.24.0",
     "slick-carousel": "^1.8.1"
@@ -21,7 +35,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+<<<<<<< HEAD
     "eject": "react-scripts eject"
+=======
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+>>>>>>> b3ecb274a2d19228c164020b146774a54bc91ad6
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +60,10 @@
   },
   "devDependencies": {
     "css-loader": "^2.1.1",
+<<<<<<< HEAD
+=======
+    "gh-pages": "^2.0.1",
+>>>>>>> b3ecb274a2d19228c164020b146774a54bc91ad6
     "style-loader": "^0.23.1",
     "webpack-cli": "^3.3.1"
   }

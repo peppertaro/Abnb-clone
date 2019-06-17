@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +67,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+Please change branch to gh-pages as master does not have any data.
+You can see website from here: [Abnb Clone](https://peppertaro.github.io/Abnb-clone/)
+>>>>>>> b3ecb274a2d19228c164020b146774a54bc91ad6
