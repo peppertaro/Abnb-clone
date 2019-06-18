@@ -364,6 +364,15 @@ $i: 0;
   }
 }
 
+$i: 0;
+@for $i from 0 through 8 {
+  .DRcards-slider.active-slide-#{$i} #DRcard-#{$i} {
+    opacity: 0.9;
+    margin: 1rem;
+    transform: scale(1);
+  }
+}
+
 .Slide-img-box {
   position: relative;
   width: 20rem;

@@ -370,6 +370,7 @@ const TopRateList = [
 const DreamList = [
   {
     DRkey: 901,
+    DRindex: 0,
     DRlink: "#DreamLink1",
     DRimg: "./img/DR-exp/Nica.jpg",
     DRplace: "Paris",
@@ -377,6 +378,7 @@ const DreamList = [
   },
   {
     DRkey: 902,
+    DRindex: 1,
     DRlink: "#DreamLink2",
     DRimg: "./img/DR-exp//BIL.jpg",
     DRplace: "New York",
@@ -384,6 +386,7 @@ const DreamList = [
   },
   {
     DRkey: 903,
+    DRindex: 2,
     DRlink: "#DreamLink3",
     DRimg: "./img/DR-exp/BOL.jpg",
     DRplace: "Los Angeles",
@@ -391,6 +394,7 @@ const DreamList = [
   },
   {
     DRkey: 904,
+    DRindex: 3,
     DRlink: "#DreamLink4",
     DRimg: "./img/DR-exp/BRA.jpg",
     DRplace: "Paris",
@@ -398,6 +402,7 @@ const DreamList = [
   },
   {
     DRkey: 905,
+    DRindex: 4,
     DRlink: "#DreamLink5",
     DRimg: "./img/DR-exp/CHL.jpg",
     DRplace: "London",
@@ -405,6 +410,7 @@ const DreamList = [
   },
   {
     DRkey: 906,
+    DRindex: 5,
     DRlink: "#DreamLink6",
     DRimg: "./img/DR-exp/DUB.jpg",
     DRplace: "Singapore",

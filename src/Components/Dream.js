@@ -1,25 +1,71 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import { DreamList } from "../ListData";
+import DreamBox from "./DreamBox";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+library.add(faAngleLeft, faAngleRight);
 class Dream extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      drmList: DreamList,
+      drm: DreamList[0]
+    };
+  }
+
+  Nextbtn = () => {
+    const nextCard = this.state.drm.DRindex + 1;
+    this.state.drm.DRindex === this.state.drmList.length - 1
+      ? this.setState({ onClick: null })
+      : this.setState({ drm: this.state.drmList[nextCard] });
+  };
+
+  Prevbtn = () => {
+    const prevCard = this.state.drm.DRindex - 1;
+    this.state.drm.DRindex === 0
+      ? this.setState({ onClick: null })
+      : this.setState({ drm: this.state.drmList[prevCard] });
+  };
+
   render() {
     return (
-      <Carousel.Item className="Dream-box Carousel-img-box">
-        <a className="Dream-link  link-item" href={this.props.DRlink} alt="">
-          {this.props.DRlink}
-        </a>
-        <Carousel.Caption className="Dream-card">
-          <img
-            className="Dream-img Carousel-img d-block w-100 "
-            src={this.props.DRimg}
-            alt=""
-          />
-          <p className="Dream-place">{this.props.DRplace}</p>
-          <p className="Dream-price">
-            {" $" + this.props.DRprc + "/night average "}
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
+      <div className="Dream-section">
+        <div className="container">
+          <h2 className="title">Your Dreamed places is here</h2>
+          <div className="Dreams">
+            <div className="Dream-box slider-box d-flex">
+              <button className="slider-btn" onClick={() => this.Prevbtn()}>
+                {" "}
+                <FontAwesomeIcon icon="angle-left" className="angle-i m-4" />
+              </button>
+              <div
+                className={`DRcards-slider cards-slider active-slide-${
+                  this.state.drm.DRindex
+                }`}
+              >
+                <div
+                  className="card-slider-wrapper d-flex"
+                  style={{
+                    transform: `translateX(-${this.state.drm.DRindex *
+                      (100 / this.state.drmList.length)}%)`
+                  }}
+                >
+                  {DreamList.map(DreamList => (
+                    <DreamBox key={DreamList.DRkey} DreamList={DreamList} />
+                  ))}
+                </div>
+              </div>
+              <button className="slider-btn" onClick={() => this.Nextbtn()}>
+                {" "}
+                <FontAwesomeIcon icon="angle-right" className="angle-i m-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     );
   }
 }
+
 export default Dream;
