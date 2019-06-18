@@ -32,25 +32,29 @@ class GuestTypeBox extends React.Component {
             <p className="GMdsc">{this.props.GMdsc}</p>
           </div>
           <div className="numbers-box d-flex align-items-center">
-            <FontAwesomeIcon
-              icon="minus"
+            <button
+              type="button"
               id={this.props.GMidMinus}
               className="GMMinus"
               onClick={() => {
                 this.NumMinus();
               }}
-            />
+            >
+              <FontAwesomeIcon icon="minus" />
+            </button>
             <p id={this.props.GMnumID} className="GMnum">
               {this.state.GMnum}
             </p>
-            <FontAwesomeIcon
-              icon="plus"
+            <button
+              type="button"
               id={this.props.GMidPlus}
               className="GMPlus"
               onClick={() => {
                 this.NumPlus();
               }}
-            />
+            >
+              <FontAwesomeIcon icon="plus" />
+            </button>
           </div>
         </div>
       </div>

@@ -238,8 +238,8 @@ header {
 }
 .GMMinus,
 .GMPlus {
-  font-size: 3.5rem;
-  padding: 1rem;
+  font-size: 1rem;
+  padding: 0.8rem;
   border: 0.1rem solid blueviolet;
   border-radius: 50%;
   color: rgba(0, 0, 0, 0.6);
@@ -351,6 +351,7 @@ $i: 0;
 @for $i from 0 through 8 {
   .RDcards-slider.active-slide-#{$i} #RDcard-#{$i} {
     opacity: 0.9;
+    margin: 1rem;
     transform: scale(1);
   }
 }
@@ -358,6 +359,7 @@ $i: 0;
 @for $i from 0 through 4 {
   .BHcards-slider.active-slide-#{$i} #BHcard-#{$i} {
     opacity: 0.9;
+    margin: 1rem;
     transform: scale(1);
   }
 }
