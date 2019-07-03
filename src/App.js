@@ -51,7 +51,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="root-section bg-light">
-        {console.log(JSON.stringify(process.env.key_test))}
+        {console.log(JSON.stringify(process.env))}
         <div id="home" className="Home-section">
           <div className="bg-bk">
             <div className="header justify-content-between row px-3 mb-5">
