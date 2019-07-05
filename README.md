@@ -1,2 +1,1 @@
-Please change branch to gh-pages as master does not have any data.
-You can see website from here: [Abnb Clone](https://peppertaro.github.io/Abnb-clone/)
+I rebuilt the website in heroku. You can see it from here: [Abnb Clone](https://tabnb-clone.herokuapp.com/)

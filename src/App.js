@@ -12,7 +12,6 @@ import Dream from "./Components/Dream";
 import FooterModal from "./Modals/FooterModal";
 import { navList, optionList, HomeList, TopRateList } from "./ListData";
 import "./App.scss";
-import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAirbnb } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -51,7 +50,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="root-section bg-light">
-        {console.log(JSON.stringify(process.env))}
         <div id="home" className="Home-section">
           <div className="bg-bk">
             <div className="header justify-content-between row px-3 mb-5">
@@ -116,14 +114,14 @@ class App extends React.Component {
                   </div>
                   <GuestModal />
                   <div id="search-btn" className="text-right">
-                    <Button
+                    <button
                       variant="flat"
                       id="search"
                       className="btn-danger text-light px-4 py-3"
                       type="submit"
                     >
                       Search
-                    </Button>
+                    </button>
                   </div>
                 </form>
               </div>
@@ -157,7 +155,7 @@ class App extends React.Component {
               <div className="A-plus-img-box">
                 <div className="A-plus-btn">
                   <div className="d-flex justify-content-between">
-                    <Button
+                    <button
                       variant="flat"
                       id="A-plus-home"
                       className="bg-light px-4 py-3"
@@ -165,7 +163,7 @@ class App extends React.Component {
                     >
                       EXPLORE HOMES
                       <FontAwesomeIcon icon="angle-right" className="home-i" />
-                    </Button>
+                    </button>
                   </div>
                 </div>
               </div>

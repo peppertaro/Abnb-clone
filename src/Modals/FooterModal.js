@@ -196,7 +196,7 @@ class FooterModal extends React.Component {
                     className="FT-logo-i m-4"
                   />
                   <p className="cr-text p-3">
-                    © 2019 TAbnb, Inc. All rights reserved.
+                    2019 TAbnb clone page, pls lemme know if there's any problem
                   </p>
                   <div className="FT-buttons d-flex justify-content-end">
                     <button
