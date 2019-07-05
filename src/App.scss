@@ -264,6 +264,13 @@ $star5: $starFull * 5;
   color: #ff5a60;
 }
 
+.nav-i{
+  display:inline;
+  color:#fff;
+  margin:1rem;
+  font-size:3.5rem;
+}
+
 .link-font {
   font-size: 1.5rem;
   margin: 1rem;
@@ -277,18 +284,18 @@ $star5: $starFull * 5;
 }
 
 .header-right {
-  display: flex;
+  display: none;
   padding-top: 3rem;
   margin-right: 0.5rem;
 }
 
 /*----------------------------*/
 .search-box {
-  width: 35rem;
   height: 20%;
   background-color: #fff;
   border-radius: 0.5rem;
   padding: 2rem;
+  margin:0 auto;
 }
 
 .form-title {
@@ -326,9 +333,9 @@ $star5: $starFull * 5;
   cursor: pointer;
 }
 
-.f-date-box {
-  width: 50%;
-  display: inline-block;
+.f-dates{
+  display:flex;
+  justify-content: center;
 }
 
 .f-input-box {
@@ -435,8 +442,7 @@ $star5: $starFull * 5;
 }
 
 .option-img {
-  width: 10rem;
-  height: 100%;
+  width: 50%;
 }
 
 .option-text {
@@ -631,7 +637,6 @@ $i: 0;
 
 .exp-dsc {
   padding: 4rem;
-  width: 40%;
 }
 
 .exp-tag {
@@ -835,11 +840,23 @@ $i: 0;
   .container {
     max-width: 540px;
   }
+  .search-box{
+    margin:0;
+  }
+  .nav-i{
+    display:inline;
+  }
+  .header-right{
+    display:none;
+  }
   .options{
     display:block;
   }
   .option{
     width:90%;
+  }
+  .search-box{
+    width: 90%;
   }
   .A-Home-card{
     width:50%;
@@ -850,6 +867,15 @@ $i: 0;
   .container {
     max-width: 720px;
   }
+  .search-box{
+    margin:0;
+  }
+  .nav-i{
+    display:none;
+  }
+  .header-right{
+    display:flex;
+  }
   .options{
     display: flex;
   }
@@ -857,7 +883,10 @@ $i: 0;
     width:32%;
   }
   .option-text{
-    padding:10%;
+    padding:5%;
+  }
+  .search-box{
+    width: 35rem;
   }
   .A-Home-card{
     width:32%;
@@ -868,13 +897,25 @@ $i: 0;
   .container {
     max-width: 960px;
   }
+  .nav-i{
+    display:none;
+  }
+  .header-right{
+    display:flex;
+  }
   .options{
     display: flex;
   }
   .option{
     width:25%;
   }
+  .search-box{
+    width: 35rem;
+  }
   .A-Home-card{
     width:25%;
+  }
+  .exp-dsc{
+    width: 40rem;
   }
 }

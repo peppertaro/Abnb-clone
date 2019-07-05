@@ -16,12 +16,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAirbnb } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
-  faAngleDown,
   faAngleRight,
-  faGlobeEurope,
-  faTimes
+  faBars
 } from "@fortawesome/free-solid-svg-icons";
-library.add(faAngleDown, faAngleRight, faGlobeEurope, faTimes, faAirbnb);
+library.add( faAngleRight, faBars, faAirbnb);
 
 class App extends React.Component {
   constructor(props) {
@@ -69,6 +67,7 @@ class App extends React.Component {
                   );
                 })}
               </div>
+              <FontAwesomeIcon icon="bars" className="nav-i" />
             </div>
             <div className="Search-element">
               <div className="container">
@@ -82,33 +81,35 @@ class App extends React.Component {
                     placeholder="Anywhere"
                     className="f-input"
                   />
-                  <div className="f-date-box">
-                    <p className="f-check-in f-expl">CHECK-IN</p>
-                    <DatePicker
-                      selected={this.state.startDate}
-                      selectsStart
-                      startDate={this.state.startDate}
-                      endDate={this.state.endDate}
-                      onChange={this.handleChangeStart}
-                      minDate={this.state.today}
-                      id="home-checkin"
-                      placeholderText="mm/dd/yyyy"
-                      className="f-input"
-                    />
-                  </div>
-                  <div className="f-date-box">
-                    <p className="f-check-out f-expl">CHECKOUT</p>
-                    <DatePicker
-                      selected={this.state.endDate}
-                      selectsEnd
-                      startDate={this.state.startDate}
-                      endDate={this.state.endDate}
-                      onChange={this.handleChangeEnd}
-                      minDate={this.state.startDate}
-                      id="home-checkout"
-                      placeholderText="mm/dd/yyyy"
-                      className="f-input"
-                    />
+                  <div className="f-dates">
+                    <div className="f-date-box">
+                      <p className="f-check-in f-expl">CHECK-IN</p>
+                      <DatePicker
+                        selected={this.state.startDate}
+                        selectsStart
+                        startDate={this.state.startDate}
+                        endDate={this.state.endDate}
+                        onChange={this.handleChangeStart}
+                        minDate={this.state.today}
+                        id="home-checkin"
+                        placeholderText="mm/dd/yyyy"
+                        className="f-input"
+                      />
+                    </div>
+                    <div className="f-date-box">
+                      <p className="f-check-out f-expl">CHECKOUT</p>
+                      <DatePicker
+                        selected={this.state.endDate}
+                        selectsEnd
+                        startDate={this.state.startDate}
+                        endDate={this.state.endDate}
+                        onChange={this.handleChangeEnd}
+                        minDate={this.state.startDate}
+                        id="home-checkout"
+                        placeholderText="mm/dd/yyyy"
+                        className="f-input"
+                      />
+                    </div>
                   </div>
                   <GuestModal />
                   <div id="search-btn">
