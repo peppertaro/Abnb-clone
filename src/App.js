@@ -51,6 +51,7 @@ class App extends React.Component {
     return (
       <div className="root-section">
         <div id="home" className="Home-section">
+          <img className="bg_Home_img" src="./img/plzCons-img.jpg" alt="" />
           <div className="bg-bk">
             <div className="header">
               <div className="logo">
@@ -142,11 +143,14 @@ class App extends React.Component {
         </div>
         <div className="A-plus-section">
           <div className="container">
-            <div className="A-plus-box">
+            <div className="A-plus-dsc-box">
               <h2 className="title">Introducing TAbnb Plus</h2>
               <p className="A-plus-dsc">
                 A selection of homes verified for quality and design
               </p>
+            </div>
+            <div className="A-plus-box">
+              <img className="A-plus-bg-img" src="./img/laConcha.jpg" alt="" />
               <div className="A-plus-img-box">
                 <div className="A-plus-btn">
                   <button
