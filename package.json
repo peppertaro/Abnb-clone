@@ -1,4 +1,5 @@
 {
+  "homepage": "https://peppertaro.github.io/Abnb-clone/",
   "name": "egia",
   "version": "0.1.0",
   "private": true,
@@ -8,7 +9,6 @@
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "node-sass": "^4.12.0",
-    "popper.js": "^1.15.0",
     "react": "^16.8.6",
     "react-datepicker": "^2.7.0",
     "react-dom": "^16.8.6",
@@ -20,7 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
