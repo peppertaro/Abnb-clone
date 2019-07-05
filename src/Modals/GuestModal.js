@@ -42,7 +42,7 @@ class GuestModal extends React.Component {
         <p className="f-guests f-expl">GUESTS</p>
         <div
           id="f-guest-btn"
-          className="f-input d-flex justify-content-between"
+          className="f-input"
           onClick={() => {
             this.handleClick();
           }}
@@ -52,7 +52,7 @@ class GuestModal extends React.Component {
         </div>
         <div id="GTModalRcv" />
         <ReactModal
-          className="Guest-modal bg-light"
+          className="Guest-modal"
           isOpen={this.state.GMToggle}
           onRequestClose={this.handleClick}
           style={custom}
@@ -71,7 +71,7 @@ class GuestModal extends React.Component {
               />
             );
           })}
-          <div id="GMApply" className="text-right">
+          <div id="GMApply">
             <div
               href="#Apply"
               alt=""

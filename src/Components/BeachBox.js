@@ -5,7 +5,7 @@ const BeachBox = ({ beachList }) => {
   return (
     <div id={`BHcard-${BHindex}`} className="Beach-img-box Slide-img-box">
       <img className="Beach-img Slide-img" src={BHimg} alt="" />
-      <div className="Beach-info Slide-info text-light">
+      <div className="Beach-info Slide-info">
         <h3 className="Beach-title Slide-title">{BHtitle}</h3>
         <p className="Beach-prc">{BHprc}</p>
       </div>

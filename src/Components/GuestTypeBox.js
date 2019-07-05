@@ -26,12 +26,12 @@ class GuestTypeBox extends React.Component {
   render() {
     return (
       <div className="Guest-type-box">
-        <div className="GuestType d-flex justify-content-between align-items-center p-3">
+        <div className="GuestType">
           <div className="GuestInfo ">
             <h3 className="GMtype">{this.props.GMtype}</h3>
             <p className="GMdsc">{this.props.GMdsc}</p>
           </div>
-          <div className="numbers-box d-flex align-items-center">
+          <div className="numbers-box">
             <button
               type="button"
               id={this.props.GMidMinus}

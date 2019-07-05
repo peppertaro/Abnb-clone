@@ -55,10 +55,7 @@ class App extends React.Component {
           <div className="bg-bk">
             <div className="header">
               <div className="logo">
-                <FontAwesomeIcon
-                  icon={["fab", "airbnb"]}
-                  className="logo-i m-4"
-                />
+                <FontAwesomeIcon icon={["fab", "airbnb"]} className="logo-i" />
               </div>
               <div className="header-right">
                 {navList.map(NavItem => {

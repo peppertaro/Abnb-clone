@@ -34,10 +34,10 @@ class Dream extends React.Component {
         <div className="container">
           <h2 className="title">Your Dreamed places is here</h2>
           <div className="Dreams">
-            <div className="Dream-box slider-box d-flex">
+            <div className="Dream-box slider-box">
               <button className="slider-btn" onClick={() => this.Prevbtn()}>
                 {" "}
-                <FontAwesomeIcon icon="angle-left" className="angle-i m-4" />
+                <FontAwesomeIcon icon="angle-left" className="angle-i" />
               </button>
               <div
                 className={`DRcards-slider cards-slider active-slide-${
@@ -45,7 +45,7 @@ class Dream extends React.Component {
                 }`}
               >
                 <div
-                  className="card-slider-wrapper d-flex"
+                  className="card-slider-wrapper"
                   style={{
                     transform: `translateX(-${this.state.drm.DRindex *
                       (100 / this.state.drmList.length)}%)`
@@ -58,7 +58,7 @@ class Dream extends React.Component {
               </div>
               <button className="slider-btn" onClick={() => this.Nextbtn()}>
                 {" "}
-                <FontAwesomeIcon icon="angle-right" className="angle-i m-4" />
+                <FontAwesomeIcon icon="angle-right" className="angle-i" />
               </button>
             </div>
           </div>

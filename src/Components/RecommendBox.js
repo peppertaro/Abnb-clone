@@ -5,7 +5,7 @@ const recommendBox = ({ recommendList }) => {
   return (
     <div id={`RDcard-${RDindex}`} className="rcmd-img-box Slide-img-box">
       <img className="rcmd-img Slide-img" src={RDimg} alt="" />
-      <div className="rcmd-info Slide-info text-light">
+      <div className="rcmd-info Slide-info">
         <h3 className="rcmd-title Slide-title">{RDtitle}</h3>
         <p className="rcmd-prc">{RDprc}</p>
       </div>

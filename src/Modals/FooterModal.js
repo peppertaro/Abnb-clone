@@ -57,7 +57,6 @@ class FooterModal extends React.Component {
       <div className="Footer">
         <div
           id="footer-btn"
-          className="bg-light"
           onClick={() => {
             if (this.state.icon === "globe-europe") {
               this.openButton();
@@ -76,10 +75,10 @@ class FooterModal extends React.Component {
           className="footer-modal"
           style={custom}
         >
-          <div className="footer-modal-box bg-light">
+          <div className="footer-modal-box">
             <div className="container">
               <div className="footer-container">
-                <div className="footer-boxes d-flex">
+                <div className="footer-boxes">
                   <div className="footer-box">
                     <h4 className="FT-modal-title">TAbnb</h4>
                     {FooterABList.map(FTmodalItem => {
@@ -190,19 +189,19 @@ class FooterModal extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className="FT-copyright border-top pt-4 d-flex">
+                <div className="FT-copyright">
                   <FontAwesomeIcon
                     icon={["fab", "airbnb"]}
-                    className="FT-logo-i m-4"
+                    className="FT-logo-i"
                   />
-                  <p className="cr-text p-3">
+                  <p className="cr-text">
                     2019 TAbnb clone page, pls lemme know if there's any problem
                   </p>
-                  <div className="FT-buttons d-flex justify-content-end">
+                  <div className="FT-buttons">
                     <button
                       variant="flat"
                       id="lang"
-                      className=" FT-button bg-light"
+                      className=" FT-button"
                       type="submit"
                     >
                       English
@@ -210,7 +209,7 @@ class FooterModal extends React.Component {
                     <button
                       variant="flat"
                       id="currency"
-                      className="FT-button bg-light"
+                      className="FT-button"
                       type="submit"
                     >
                       JPY - ¥

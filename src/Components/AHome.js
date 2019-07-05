@@ -11,7 +11,7 @@ class AHome extends React.Component {
           <p className="A-Home-place">{this.props.HMplace}</p>
           <h4 className="A-Home-title">{this.props.HMtitle}</h4>
           <p className="A-Home-price">¥ {this.props.HMprice} per night</p>
-          <p className="A-Home-stars d-flex align-items-center">
+          <p className="A-Home-stars Rate-Stars">
             <span className={"star" + this.props.HMstar} />
             <span className="StarNum">{this.props.HMstarnum}</span>
             <span className="SPhost">{this.props.HMSPhost}</span>

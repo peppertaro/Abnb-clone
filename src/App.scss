@@ -1,6 +1,7 @@
-$bg_light: #f8f9fa;
+$light: #f8f9fa;
 $danger: #dc3545;
 $footer_gray: #767676;
+$shadow: rgba(0, 0, 0, 0.16);
 
 /*----------General-----------*/
 * {
@@ -36,6 +37,10 @@ a {
   font-family: inherit;
 }
 
+.angle-i {
+  margin: 1.5rem;
+}
+
 .link-item {
   position: absolute;
   height: 100%;
@@ -44,10 +49,6 @@ a {
   white-space: nowrap;
   overflow: hidden;
   cursor: pointer;
-}
-
-.bg-yellow {
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .title {
@@ -59,6 +60,11 @@ a {
 .showAll {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.Rate-Stars {
+  display: flex;
+  align-items: center;
 }
 
 /*-------Rate variables-----------*/
@@ -159,7 +165,7 @@ $star5: $starFull * 5;
 }
 
 .root-section {
-  background-color: $bg_light;
+  background-color: $light;
 }
 
 /*----------HomeSection-----------*/
@@ -191,12 +197,20 @@ $star5: $starFull * 5;
 .logo-i {
   font-size: 3.5rem;
   font-weight: bold;
+  margin: 1.5rem;
   color: #ff5a60;
 }
 
 .link-font {
   font-size: 1.5rem;
+  margin: 1rem;
+  color: $light;
+  padding: 0.5rem;
   cursor: pointer;
+}
+
+.link-font:hover {
+  color: #fff;
 }
 
 .header-right {
@@ -220,6 +234,8 @@ $star5: $starFull * 5;
 }
 
 .f-input {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   padding: 1rem;
   margin: 0.3rem 0 1.2rem;
@@ -258,8 +274,21 @@ $star5: $starFull * 5;
   position: relative;
 }
 
+.GuestType {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.numbers-box {
+  display: flex;
+  align-items: center;
+}
+
 .Guest-modal {
   position: absolute;
+  background-color: $light;
   padding: 2rem;
   top: 0;
   left: 0;
@@ -281,6 +310,7 @@ $star5: $starFull * 5;
 
 #GMApply {
   padding: 1rem;
+  text-align: right;
   cursor: pointer;
   &:hover {
     text-decoration: underline;
@@ -368,7 +398,7 @@ $star5: $starFull * 5;
 .A-plus-home-btn {
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
-  background-color: $bg_light;
+  background-color: $light;
 }
 
 .home-i {
@@ -382,6 +412,7 @@ $star5: $starFull * 5;
 }
 
 .slider-box {
+  display: flex;
   border-radius: 0.5rem;
   margin: 1rem;
   height: 30rem;
@@ -395,12 +426,19 @@ $star5: $starFull * 5;
   z-index: 10;
 }
 
+.slider-btn:focus,
+.GMMinus:focus,
+.GMPlus:focus {
+  outline: 0;
+}
+
 .cards-slider {
   position: relative;
   margin: 0 auto;
 }
 .card-slider-wrapper {
   position: absolute;
+  display: flex;
   transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
@@ -451,6 +489,7 @@ $i: 0;
 }
 .Slide-info {
   position: absolute;
+  color: $light;
   z-index: 10;
   top: 80%;
   left: 50%;
@@ -552,6 +591,7 @@ $i: 0;
   font-size: 1.2rem;
   margin-left: 0.7rem;
 }
+
 /*----Beach-Section----*/
 .Beach-box {
   height: 30rem;
@@ -605,12 +645,18 @@ $i: 0;
 /*------Footer------*/
 .footer-modal-box {
   position: fixed;
+  background-color: $light;
   width: 100%;
   bottom: 0;
 }
 
+.footer-boxes {
+  display: flex;
+}
+
 #footer-btn {
   font-size: 1.4rem;
+  background-color: $light;
   position: fixed;
   z-index: 110;
   bottom: 0;
@@ -618,7 +664,7 @@ $i: 0;
   margin: 1.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0.2rem 0.8rem $shadow;
   cursor: pointer;
 }
 
@@ -664,8 +710,9 @@ $i: 0;
 
 .FT-copyright {
   position: relative;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   font-size: 1.5rem;
+  border-top: 0.1rem solid $shadow;
 }
 
 .FT-logo-i {
@@ -675,12 +722,19 @@ $i: 0;
 
 .FT-buttons {
   position: absolute;
+  display: flex;
+  justify-content: end;
   bottom: 3rem;
   right: 0;
 }
 
 .FT-button {
-  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0.2rem 0.8rem $shadow;
+  background-color: $light;
   border: none;
   margin: 0.6rem;
+}
+
+.cr-text {
+  padding: 1rem;
 }

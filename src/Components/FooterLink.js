@@ -4,7 +4,7 @@ class FooterLink extends React.Component {
     return (
       <div className="FT-Modal">
         <a
-          className="FT-Modal-link "
+          className="FT-Modal-link"
           id={this.props.FTid}
           href={this.props.FTlink}
           alt=""

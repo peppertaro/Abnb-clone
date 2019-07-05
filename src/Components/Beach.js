@@ -34,10 +34,10 @@ class Beach extends React.Component {
         <div className="container">
           <h2 className="title">Head to the beach</h2>
           <div className="Beaches">
-            <div className="Beach-box slider-box d-flex">
+            <div className="Beach-box slider-box">
               <button className="slider-btn" onClick={() => this.Prevbtn()}>
                 {" "}
-                <FontAwesomeIcon icon="angle-left" className="angle-i m-4" />
+                <FontAwesomeIcon icon="angle-left" className="angle-i" />
               </button>
               <div
                 className={`BHcards-slider cards-slider active-slide-${
@@ -45,7 +45,7 @@ class Beach extends React.Component {
                 }`}
               >
                 <div
-                  className="card-slider-wrapper d-flex"
+                  className="card-slider-wrapper"
                   style={{
                     transform: `translateX(-${this.state.bch.BHindex *
                       (100 / this.state.bchList.length)}%)`
@@ -58,7 +58,7 @@ class Beach extends React.Component {
               </div>
               <button className="slider-btn" onClick={() => this.Nextbtn()}>
                 {" "}
-                <FontAwesomeIcon icon="angle-right" className="angle-i m-4" />
+                <FontAwesomeIcon icon="angle-right" className="angle-i" />
               </button>
             </div>
           </div>
