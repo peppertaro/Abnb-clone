@@ -3,6 +3,68 @@ $danger: #dc3545;
 $footer_gray: #767676;
 $shadow: rgba(0, 0, 0, 0.16);
 
+/*-----------Reset------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+    &::-webkit-search-decoration {
+      display: none;
+    }
+    &::focus {
+      outline-offset: -2px;
+    }
+}
+
+
 /*----------General-----------*/
 * {
   box-sizing: border-box;
@@ -53,7 +115,7 @@ a {
 
 .title {
   font-size: 2rem;
-  padding-top: 3rem;
+  padding: 3rem 0 1rem;
   font-weight: bold;
 }
 
@@ -65,6 +127,7 @@ a {
 .Rate-Stars {
   display: flex;
   align-items: center;
+  padding:0.5rem 0;
 }
 
 /*-------Rate variables-----------*/
@@ -221,14 +284,15 @@ $star5: $starFull * 5;
 
 /*----------------------------*/
 .search-box {
-  width: 42rem;
+  width: 35rem;
+  height: 20%;
   background-color: #fff;
   border-radius: 0.5rem;
   padding: 2rem;
 }
 
 .form-title {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-bottom: 1rem;
   font-weight: bold;
 }
@@ -257,6 +321,7 @@ $star5: $starFull * 5;
 
 .f-expl {
   font-size: 1.2rem;
+  padding-bottom:1rem;
   font-weight: bold;
   cursor: pointer;
 }
@@ -268,6 +333,11 @@ $star5: $starFull * 5;
 
 .f-input-box {
   cursor: pointer;
+}
+
+#f-guest-btn {
+  display: flex;
+  align-items: center;
 }
 
 #GTModalRcv {
@@ -290,10 +360,21 @@ $star5: $starFull * 5;
   position: absolute;
   background-color: $light;
   padding: 2rem;
-  top: 0;
+  top: -1rem;
   left: 0;
   width: 100%;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
 }
+
+.GMtype{
+  font-size:1.5rem;
+  padding:.3rem;
+}
+
+.GMdsc{
+  padding:.3rem;
+}
+
 .GMMinus,
 .GMPlus {
   font-size: 1rem;
@@ -338,18 +419,19 @@ $star5: $starFull * 5;
   text-align: right;
 }
 /*-----------OptionSection-------------*/
-.options {
-  display: flex;
+
+.options{
+  overflow:hidden;
 }
 
 .option {
   box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
-  margin-right: 2rem;
+  margin:1%;
 }
+
 .option-box {
   display: flex;
   cursor: pointer;
-  height: 8rem;
 }
 
 .option-img {
@@ -358,10 +440,11 @@ $star5: $starFull * 5;
 }
 
 .option-text {
+  display:flex;
+  align-items: center;
   font-size: 1.5rem;
-  width: 20rem;
-  padding: 3.5rem 5rem 0.5rem 1.5rem;
-  font-weight: bold;
+  padding:0 15%;
+  font-weight: 600;
 }
 
 /*------------A-PlusSection-------------*/
@@ -372,6 +455,7 @@ $star5: $starFull * 5;
   overflow: hidden;
   height: 30rem;
   border-radius: 2rem;
+  margin-top: 1%;
 }
 
 .A-plus-bg-img {
@@ -384,6 +468,10 @@ $star5: $starFull * 5;
 
 .A-plus-dsc-box {
   z-index: 1;
+}
+
+.A-plus-dsc {
+  padding-bottom: 1rem;
 }
 
 .A-plus-btn {
@@ -427,6 +515,7 @@ $star5: $starFull * 5;
 }
 
 .slider-btn:focus,
+.Guest-modal:focus,
 .GMMinus:focus,
 .GMPlus:focus {
   outline: 0;
@@ -490,15 +579,21 @@ $i: 0;
 .Slide-info {
   position: absolute;
   color: $light;
+  background-color:$shadow;
+  width:100%;
+  height:100%;
+  padding-top:90%;
+  text-align:center; 
   z-index: 10;
-  top: 80%;
-  left: 50%;
+  top:50%;
+  left:50%;
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
-.Slide-title {
-  font-size: 1.5rem;
+
+.Slide-title,.Slide-place {
+  font-size: 2rem;
 }
 
 /*----ExperienceSection----*/
@@ -536,11 +631,11 @@ $i: 0;
 
 .exp-dsc {
   padding: 4rem;
-  width: 28rem;
+  width: 40%;
 }
 
 .exp-tag {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .exp-title {
@@ -551,7 +646,7 @@ $i: 0;
 }
 
 .exp-expl {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
@@ -562,13 +657,12 @@ $i: 0;
 /*----A-HomeSection----*/
 .A-Homes {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .A-Home-card {
   position: relative;
-  margin: 1rem;
-  width: 25rem;
 }
 
 .A-home-i {
@@ -576,11 +670,7 @@ $i: 0;
 }
 
 .A-Home-img {
-  width: 25rem;
-}
-
-.A-Home-title {
-  font-size: 1.2rem;
+  width: 90%;
 }
 
 .A-Home-others {
@@ -599,9 +689,8 @@ $i: 0;
 
 /*----Top-Rated-Section----*/
 .Top-Rated-experiences {
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .Top-Rate-box {
@@ -623,8 +712,10 @@ $i: 0;
   object-fit: cover;
 }
 
-.Top-Rate-title {
+.card-title {
   font-size: 1.2rem;
+  padding:1rem 0;
+  font-weight:600;
 }
 
 .Top-Rate-others {
@@ -648,6 +739,7 @@ $i: 0;
   background-color: $light;
   width: 100%;
   bottom: 0;
+  box-shadow: 0 0.2rem 0.8rem $shadow;
 }
 
 .footer-boxes {
@@ -737,4 +829,52 @@ $i: 0;
 
 .cr-text {
   padding: 1rem;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .options{
+    display:block;
+  }
+  .option{
+    width:90%;
+  }
+  .A-Home-card{
+    width:50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .options{
+    display: flex;
+  }
+  .option{
+    width:32%;
+  }
+  .option-text{
+    padding:10%;
+  }
+  .A-Home-card{
+    width:32%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .options{
+    display: flex;
+  }
+  .option{
+    width:25%;
+  }
+  .A-Home-card{
+    width:25%;
+  }
 }
