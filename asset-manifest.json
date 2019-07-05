@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/Abnb-clone/static/css/main.e0bb919d.chunk.css",
-    "main.js": "/Abnb-clone/static/js/main.ad2efd46.chunk.js",
-    "main.js.map": "/Abnb-clone/static/js/main.ad2efd46.chunk.js.map",
-    "runtime~main.js": "/Abnb-clone/static/js/runtime~main.70b4f906.js",
-    "runtime~main.js.map": "/Abnb-clone/static/js/runtime~main.70b4f906.js.map",
-    "static/css/2.c7bb94bc.chunk.css": "/Abnb-clone/static/css/2.c7bb94bc.chunk.css",
-    "static/js/2.d6f56ba4.chunk.js": "/Abnb-clone/static/js/2.d6f56ba4.chunk.js",
-    "static/js/2.d6f56ba4.chunk.js.map": "/Abnb-clone/static/js/2.d6f56ba4.chunk.js.map",
-    "index.html": "/Abnb-clone/index.html",
-    "precache-manifest.d2dea4acea51af8a61109e20e2c8d1d5.js": "/Abnb-clone/precache-manifest.d2dea4acea51af8a61109e20e2c8d1d5.js",
-    "service-worker.js": "/Abnb-clone/service-worker.js",
-    "static/css/2.c7bb94bc.chunk.css.map": "/Abnb-clone/static/css/2.c7bb94bc.chunk.css.map",
-    "static/css/main.e0bb919d.chunk.css.map": "/Abnb-clone/static/css/main.e0bb919d.chunk.css.map",
-    "static/media/App.scss": "/Abnb-clone/static/media/plzCons-img.d53e3e1a.jpg"
+    "main.css": "/static/css/main.38eb54f3.chunk.css",
+    "main.js": "/static/js/main.5c56955a.chunk.js",
+    "main.js.map": "/static/js/main.5c56955a.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.c7bb94bc.chunk.css": "/static/css/2.c7bb94bc.chunk.css",
+    "static/js/2.b111f6a6.chunk.js": "/static/js/2.b111f6a6.chunk.js",
+    "static/js/2.b111f6a6.chunk.js.map": "/static/js/2.b111f6a6.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.949465acd48cf75c25e05cf8c985aa8e.js": "/precache-manifest.949465acd48cf75c25e05cf8c985aa8e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.c7bb94bc.chunk.css.map": "/static/css/2.c7bb94bc.chunk.css.map",
+    "static/css/main.38eb54f3.chunk.css.map": "/static/css/main.38eb54f3.chunk.css.map"
   }
 }
