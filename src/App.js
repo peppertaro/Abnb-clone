@@ -49,17 +49,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="root-section bg-light">
+      <div className="root-section">
         <div id="home" className="Home-section">
           <div className="bg-bk">
-            <div className="header justify-content-between row px-3 mb-5">
+            <div className="header">
               <div className="logo">
                 <FontAwesomeIcon
                   icon={["fab", "airbnb"]}
                   className="logo-i m-4"
                 />
               </div>
-              <div className="header-right row pt-5 mr-2">
+              <div className="header-right">
                 {navList.map(NavItem => {
                   return (
                     <Nav
@@ -113,13 +113,8 @@ class App extends React.Component {
                     />
                   </div>
                   <GuestModal />
-                  <div id="search-btn" className="text-right">
-                    <button
-                      variant="flat"
-                      id="search"
-                      className="btn-danger text-light px-4 py-3"
-                      type="submit"
-                    >
+                  <div id="search-btn">
+                    <button variant="flat" id="search" type="submit">
                       Search
                     </button>
                   </div>
@@ -154,17 +149,15 @@ class App extends React.Component {
               </p>
               <div className="A-plus-img-box">
                 <div className="A-plus-btn">
-                  <div className="d-flex justify-content-between">
-                    <button
-                      variant="flat"
-                      id="A-plus-home"
-                      className="bg-light px-4 py-3"
-                      type="submit"
-                    >
-                      EXPLORE HOMES
-                      <FontAwesomeIcon icon="angle-right" className="home-i" />
-                    </button>
-                  </div>
+                  <button
+                    variant="flat"
+                    id="A-plus-home"
+                    className="A-plus-home-btn"
+                    type="submit"
+                  >
+                    EXPLORE HOMES
+                    <FontAwesomeIcon icon="angle-right" className="home-i" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -179,16 +172,14 @@ class App extends React.Component {
                 <div className="exp-bg">
                   <div className="exp-dsc">
                     <div className="exp-tag">TAbnb EXPERIENCES</div>
-                    <div className="exp-title font-weight-bold">
+                    <div className="exp-title">
                       Learn from the most interesting experts
                     </div>
                     <div className="exp-expl">
                       One-of-a-kind activities hosted by locals, created for the
                       curious.
                     </div>
-                    <div className="exp-book font-weight-bold">
-                      Book experiences
-                    </div>
+                    <div className="exp-book">Book experiences</div>
                   </div>
                 </div>
               </div>
@@ -197,7 +188,7 @@ class App extends React.Component {
         </div>
         <div className="A-Homes-section">
           <div className="container">
-            <div className="A-Homes-title Title-box d-flex">
+            <div className="A-Homes-title Title-box">
               <h2 className="title">Places to stay around the world</h2>
               <FontAwesomeIcon icon="angle-right" className="A-home-i" />
             </div>
@@ -229,7 +220,7 @@ class App extends React.Component {
         <Beach />
         <div className="Top-Rated-experience-Section">
           <div className="container">
-            <div className="Top-Rated-title Title-box d-flex">
+            <div className="Top-Rated-title Title-box">
               <div className="Top-Rated-title-box">
                 <h2 className="title">Top-rated experiences</h2>
                 <p className="Top-Rated-expl">
@@ -238,7 +229,7 @@ class App extends React.Component {
               </div>
               <FontAwesomeIcon icon="angle-right" className="Top-Rated-i" />
             </div>
-            <div className="Top-Rated-experiences d-flex flex-wrap">
+            <div className="Top-Rated-experiences">
               {TopRateList.map(TopRateItem => {
                 return (
                   <TopRate
@@ -255,7 +246,7 @@ class App extends React.Component {
                 );
               })}
             </div>
-            <a className="Top-Rated-show showAll d-flex" href="#TPShow">
+            <a className="Top-Rated-show showAll" href="#TPShow">
               Show all experiences
               <FontAwesomeIcon icon="angle-right" className="TR-show-i" />
             </a>

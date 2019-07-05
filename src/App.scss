@@ -1,6 +1,27 @@
+$bg_light: #f8f9fa;
+$danger: #dc3545;
+$footer_gray: #767676;
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
 /*----------General-----------*/
 * {
   box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 button {
@@ -148,6 +169,10 @@ $star5: $starFull * 5;
   }
 }
 
+.root-section {
+  background-color: $bg_light;
+}
+
 /*----------HomeSection-----------*/
 .Home-section {
   position: relative;
@@ -161,8 +186,12 @@ $star5: $starFull * 5;
 }
 
 /*----------Header-----------*/
-header {
+.header {
+  display: flex;
+  justify-content: space-between;
   height: 6rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
 }
 
 .logo-i {
@@ -174,6 +203,12 @@ header {
 .link-font {
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.header-right {
+  display: flex;
+  padding-top: 3rem;
+  margin-right: 0.5rem;
 }
 
 /*----------------------------*/
@@ -268,9 +303,16 @@ header {
 
 #search {
   font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
   font-weight: bold;
+  background-color: $danger;
+  color: #fff;
 }
 
+#search-btn {
+  text-align: right;
+}
 /*-----------OptionSection-------------*/
 .options {
   display: flex;
@@ -312,6 +354,12 @@ header {
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+.A-plus-home-btn {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: $bg_light;
 }
 
 .home-i {
@@ -451,10 +499,12 @@ $i: 0;
   font-size: 2rem;
   padding: 1rem 0;
   color: yellow;
+  font-weight: 700;
 }
 
 .exp-expl {
   font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .exp-book {
@@ -501,6 +551,8 @@ $i: 0;
 /*----Top-Rated-Section----*/
 .Top-Rated-experiences {
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .Top-Rate-box {
@@ -580,13 +632,13 @@ $i: 0;
 }
 
 .FT-Modal-link {
-  color: #767676;
+  color: $footer_gray;
   font-size: 1.4rem;
   padding: 0.4rem 0;
 }
 
 .sns-i {
-  color: #767676;
+  color: $footer_gray;
   font-size: 1.8rem;
   margin-right: 1.5rem;
 }
